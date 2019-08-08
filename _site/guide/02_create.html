@@ -10,10 +10,10 @@
   <title>Create your book</title>
   <meta name="description" content="Create your Jupyter Book">
 
-  <link rel="canonical" href="http://0.0.0.0:4000/jupyter-book/guide/02_create.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/jupyter-book/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/think-data/guide/02_create.html">
+  <link rel="alternate" type="application/rss+xml" title="Think Data" href="http://0.0.0.0:4000/think-data/feed.xml">
 
-  <meta property="og:url"         content="http://0.0.0.0:4000/jupyter-book/guide/02_create.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/think-data/guide/02_create.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Create your book" />
 <meta property="og:description" content="Create your Jupyter Book" />
@@ -25,39 +25,39 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "http://0.0.0.0:4000/jupyter-book/guide/02_create.html",
+    "http://0.0.0.0:4000/think-data/guide/02_create.html",
   "headline":
     "Create your book",
   "datePublished":
-    "2019-08-08T11:12:03-05:00",
+    "2019-08-08T13:57:26-05:00",
   "dateModified":
-    "2019-08-08T11:12:03-05:00",
+    "2019-08-08T13:57:26-05:00",
   "description":
     "Create your Jupyter Book",
   "author": {
     "@type": "Person",
-    "name": "The Jupyter Book Community"
+    "name": "Kai Lu"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://0.0.0.0:4000/jupyter-book",
+      "url": "http://0.0.0.0:4000/think-data",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://0.0.0.0:4000/jupyter-book",
+    "url": "http://0.0.0.0:4000/think-data",
     "height": 60,
     "width": 60
   }
 }
 
   </script>
-  <link rel="stylesheet" href="/jupyter-book/assets/css/styles.css">
+  <link rel="stylesheet" href="/think-data/assets/css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -76,7 +76,7 @@
   <meta name="theme-color" content="#233947">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/jupyter-book/images/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/think-data/images/logo/favicon.ico">
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
@@ -120,11 +120,11 @@ initFunction = function(myfunc) {
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = '/jupyter-book';
+    const site_basename = '/think-data';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
-  <script src="/jupyter-book/assets/js/anchor.min.js"  type="text/javascript"></script>
+  <script src="/think-data/assets/js/anchor.min.js"  type="text/javascript"></script>
   <script>
 
 initFunction(function () {
@@ -135,7 +135,7 @@ initFunction(function () {
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="/jupyter-book/assets/js/turbolinks.js" async></script>
+  <script src="/think-data/assets/js/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Load nbinteract for widgets -->
@@ -153,7 +153,7 @@ initFunction(function () {
 
 const thebelabCellButton = id =>
   `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/jupyter-book/assets/images/edit-button.svg" alt="Start interactive mode">
+    <img src="/think-data/assets/images/edit-button.svg" alt="Start interactive mode">
   </a>`
 
 
@@ -178,8 +178,8 @@ initFunction(addThebelabButtonToCodeCells);
     {
       requestKernel: true,
       binderOptions: {
-        repo: 'jupyter/jupyter-book',
-        ref: 'gh-pages',
+        repo: 'kailu3/think-data',
+        ref: 'master',
       },
       codeMirrorConfig: {
         theme: "abcdef"
@@ -275,7 +275,7 @@ initFunction(addThebelabButtonToCodeCells);
 
 
   <!-- Load the auto-generating TOC -->
-  <script src="/jupyter-book/assets/js/tocbot.min.js"  type="text/javascript"></script>
+  <script src="/think-data/assets/js/tocbot.min.js"  type="text/javascript"></script>
   <script>
 var initToc = function () {
   tocbot.init({
@@ -294,7 +294,7 @@ initFunction(initToc);
 </script>
 
   <!-- Google analytics -->
-  <script src="/jupyter-book/assets/js/ga.js" async></script>
+  <script src="/think-data/assets/js/ga.js" async></script>
 
   <!-- Clipboard copy button -->
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
@@ -308,7 +308,7 @@ const codeCellId = index => `codecell${index}`
 
 const clipboardButton = id =>
   `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/jupyter-book/assets/images/copy-button.svg" alt="Copy to clipboard">
+    <img src="/think-data/assets/images/copy-button.svg" alt="Copy to clipboard">
   </a>`
 
 // Clears selected text since ClipboardJS will select the text when copying
@@ -447,11 +447,11 @@ initFunction(addCopyButtonToCodeCells);
 </script>
 
   <!-- Load custom website scripts -->
-  <script src="/jupyter-book/assets/js/scripts.js" async></script>
+  <script src="/think-data/assets/js/scripts.js" async></script>
 
   <!-- Load custom user CSS and JS  -->
-  <script src="/jupyter-book/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/jupyter-book/assets/custom/custom.css">
+  <script src="/think-data/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/think-data/assets/custom/custom.css">
 
   <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
@@ -598,7 +598,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 
   <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="/jupyter-book/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script src="/think-data/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
   <script>var initQuery = function() {
   // See if we have a search box
   var searchInput = document.querySelector('input#lunr_search');
@@ -694,8 +694,8 @@ initFunction(initQuery);
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyter.org/jupyter-book/intro.html"><img src="/jupyter-book/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
-  <h2 class="c-sidebar__title">Jupyter Book</h2>
+  <a href="https://github.com/kailu3/think-data"><img src="/think-data/images/logo/jupyter.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <h2 class="c-sidebar__title">Think Data</h2>
   <ul class="c-sidebar__chapters">
     
       
@@ -708,10 +708,10 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/intro.html"
+          href="/think-data/preface.html"
         >
           
-          Home
+          Preface
         </a>
 
         
@@ -721,7 +721,11 @@ initFunction(initQuery);
     
       
       
-        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/jupyter-book/search.html">Search</a></li>
+        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/think-data/search.html">Search</a></li>
+        
+      
+      
+        <li class="c-sidebar__divider"></li>
         
       
       
@@ -733,7 +737,7 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/guide/01_overview.html"
+          href="/think-data/getting-started/installation.html"
         >
           
           Getting started
@@ -754,11 +758,11 @@ initFunction(initQuery);
               
 
               <li class="c-sidebar__section">
-                <a class="c-sidebar__entry c-sidebar__entry--active"
-                  href="/jupyter-book/guide/02_create.html"
+                <a class="c-sidebar__entry "
+                  href="/think-data/getting-started/intro_jupyter.html"
                 >
                   
-                  Create your book
+                  Introduction to Jupyter
                 </a>
 
                 
@@ -772,10 +776,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/03_build.html"
+                  href="/think-data/getting-started/shortcuts.html"
                 >
                   
-                  Build and publish your book
+                  Useful Shortcuts
                 </a>
 
                 
@@ -789,27 +793,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/04_faq.html"
+                  href="/think-data/getting-started/extensions.html"
                 >
                   
-                  FAQ
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/05_advanced.html"
-                >
-                  
-                  How-to and advanced topics
+                  Useful Extensions
                 </a>
 
                 
@@ -834,144 +821,13 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/features/features.html"
+          href="/think-data/basics/test_notebook.html"
         >
           
-          Features and customization
+          Notebook Testing
         </a>
 
         
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections ">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/markdown.html"
-                >
-                  
-                  Markdown files
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/notebooks.html"
-                >
-                  
-                  Jupyter notebooks
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/hiding.html"
-                >
-                  
-                  Hiding code blocks or entire cells
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/interact.html"
-                >
-                  
-                  Connecting content with JupyterHub and Binder
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/interactive_cells.html"
-                >
-                  
-                  Adding interactivity to your book pages
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/search.html"
-                >
-                  
-                  Searching your book
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/limits.html"
-                >
-                  
-                  Feature Limits
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
       </li>
 
       
@@ -986,473 +842,12 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="https://github.com/jupyter/jupyter-book"
+          href="https://github.com/kailu3/think-data"
         >
           
           GitHub repository
         </a>
 
-        
-      </li>
-
-      
-    
-      
-      
-        <li class="c-sidebar__divider"></li>
-        
-      
-      
-        <li><h2 class="c-sidebar__title">Demo textbook</li>
-        
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/01/what-is-data-science.html"
-        >
-          
-            1.
-          
-          Data Science
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/1/intro.html"
-                >
-                  
-                    1.1
-                  
-                  Introduction
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/2/why-data-science.html"
-                >
-                  
-                    1.2
-                  
-                  Why Data Science?
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/3/Plotting_the_Classics.html"
-                >
-                  
-                    1.3
-                  
-                  Plotting the Classics
-                </a>
-
-                
-                
-                  
-                  
-
-                  <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
-                      href="/jupyter-book/01/3/subsection/subsections.html"
-                    >
-                      
-                        1.3.1
-                        
-                      
-                      Subsection Demo 1
-                    </a>
-                
-                  
-                  
-
-                  <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
-                      href="/jupyter-book/01/3/subsection/subsectiontwo.html"
-                    >
-                      
-                        1.3.2
-                        
-                      
-                      Subsection Demo 2
-                    </a>
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/02/causality-and-experiments.html"
-        >
-          
-            2.
-          
-          Causality and Experiments
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html"
-                >
-                  
-                    2.1
-                  
-                  John Snow and the Broad Street Pump
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/2/snow-s-grand-experiment.html"
-                >
-                  
-                    2.2
-                  
-                  Snow’s “Grand Experiment”
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/3/establishing-causality.html"
-                >
-                  
-                    2.3
-                  
-                  Establishing Causality
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/4/randomization.html"
-                >
-                  
-                    2.4
-                  
-                  Randomization
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/5/endnote.html"
-                >
-                  
-                    2.5
-                  
-                  Endnote
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/03/programming-in-python.html"
-        >
-          
-            3.
-          
-          Programming in Python
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/1/Expressions.html"
-                >
-                  
-                    3.1
-                  
-                  Expressions
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/2/Names.html"
-                >
-                  
-                    3.2
-                  
-                  Names
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/3/Calls.html"
-                >
-                  
-                    3.3
-                  
-                  Call Expressions
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/4/Introduction_to_Tables.html"
-                >
-                  
-                    3.4
-                  
-                  Introduction to Tables
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/04/Types.html"
-        >
-          
-            4.
-          
-          Data Types
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/1/Numbers.html"
-                >
-                  
-                    4.1
-                  
-                  Numbers
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/2/Strings.html"
-                >
-                  
-                    4.2
-                  
-                  Strings
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/3/Comparison.html"
-                >
-                  
-                    4.3
-                  
-                  Comparisons
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
         
       </li>
 
@@ -1565,14 +960,14 @@ has the structure that you want.</p>
               <nav class="c-page__nav">
   
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/jupyter-book/guide/01_overview.html">
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/think-data/guide/01_overview.html">
       〈 <span class="u-margin-right-tiny"></span> Getting started
     </a>
   
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/jupyter-book/guide/03_build.html">
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/think-data/guide/03_build.html">
       Build and publish your book <span class="u-margin-right-tiny"></span> 〉
     </a>
   

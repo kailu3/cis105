@@ -8,15 +8,15 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Search the site</title>
-  <meta name="description" content="This is an example book built with Jupyter Books.">
+  <meta name="description" content="This is a book for learning data analysis with Python.">
 
-  <link rel="canonical" href="http://0.0.0.0:4000/jupyter-book/search">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/jupyter-book/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/think-data/search">
+  <link rel="alternate" type="application/rss+xml" title="Think Data" href="http://0.0.0.0:4000/think-data/feed.xml">
 
-  <meta property="og:url"         content="http://0.0.0.0:4000/jupyter-book/search" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/think-data/search" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Search the site" />
-<meta property="og:description" content="This is an example book built with Jupyter Books." />
+<meta property="og:description" content="This is a book for learning data analysis with Python." />
 <meta property="og:image"       content="" />
 
 
@@ -25,39 +25,39 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "http://0.0.0.0:4000/jupyter-book/search",
+    "http://0.0.0.0:4000/think-data/search",
   "headline":
     "Search the site",
   "datePublished":
-    "2019-08-08T11:12:03-05:00",
+    "2019-08-08T13:57:26-05:00",
   "dateModified":
-    "2019-08-08T11:12:03-05:00",
+    "2019-08-08T13:57:26-05:00",
   "description":
-    "This is an example book built with Jupyter Books.",
+    "This is a book for learning data analysis with Python.",
   "author": {
     "@type": "Person",
-    "name": "The Jupyter Book Community"
+    "name": "Kai Lu"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://0.0.0.0:4000/jupyter-book",
+      "url": "http://0.0.0.0:4000/think-data",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://0.0.0.0:4000/jupyter-book",
+    "url": "http://0.0.0.0:4000/think-data",
     "height": 60,
     "width": 60
   }
 }
 
   </script>
-  <link rel="stylesheet" href="/jupyter-book/assets/css/styles.css">
+  <link rel="stylesheet" href="/think-data/assets/css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -76,7 +76,7 @@
   <meta name="theme-color" content="#233947">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/jupyter-book/images/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/think-data/images/logo/favicon.ico">
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
@@ -120,11 +120,11 @@ initFunction = function(myfunc) {
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = '/jupyter-book';
+    const site_basename = '/think-data';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
-  <script src="/jupyter-book/assets/js/anchor.min.js"  type="text/javascript"></script>
+  <script src="/think-data/assets/js/anchor.min.js"  type="text/javascript"></script>
   <script>
 
 initFunction(function () {
@@ -135,7 +135,7 @@ initFunction(function () {
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="/jupyter-book/assets/js/turbolinks.js" async></script>
+  <script src="/think-data/assets/js/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Load nbinteract for widgets -->
@@ -153,7 +153,7 @@ initFunction(function () {
 
 const thebelabCellButton = id =>
   `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/jupyter-book/assets/images/edit-button.svg" alt="Start interactive mode">
+    <img src="/think-data/assets/images/edit-button.svg" alt="Start interactive mode">
   </a>`
 
 
@@ -178,8 +178,8 @@ initFunction(addThebelabButtonToCodeCells);
     {
       requestKernel: true,
       binderOptions: {
-        repo: 'jupyter/jupyter-book',
-        ref: 'gh-pages',
+        repo: 'kailu3/think-data',
+        ref: 'master',
       },
       codeMirrorConfig: {
         theme: "abcdef"
@@ -275,7 +275,7 @@ initFunction(addThebelabButtonToCodeCells);
 
 
   <!-- Load the auto-generating TOC -->
-  <script src="/jupyter-book/assets/js/tocbot.min.js"  type="text/javascript"></script>
+  <script src="/think-data/assets/js/tocbot.min.js"  type="text/javascript"></script>
   <script>
 var initToc = function () {
   tocbot.init({
@@ -294,7 +294,7 @@ initFunction(initToc);
 </script>
 
   <!-- Google analytics -->
-  <script src="/jupyter-book/assets/js/ga.js" async></script>
+  <script src="/think-data/assets/js/ga.js" async></script>
 
   <!-- Clipboard copy button -->
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
@@ -308,7 +308,7 @@ const codeCellId = index => `codecell${index}`
 
 const clipboardButton = id =>
   `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/jupyter-book/assets/images/copy-button.svg" alt="Copy to clipboard">
+    <img src="/think-data/assets/images/copy-button.svg" alt="Copy to clipboard">
   </a>`
 
 // Clears selected text since ClipboardJS will select the text when copying
@@ -447,11 +447,11 @@ initFunction(addCopyButtonToCodeCells);
 </script>
 
   <!-- Load custom website scripts -->
-  <script src="/jupyter-book/assets/js/scripts.js" async></script>
+  <script src="/think-data/assets/js/scripts.js" async></script>
 
   <!-- Load custom user CSS and JS  -->
-  <script src="/jupyter-book/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/jupyter-book/assets/custom/custom.css">
+  <script src="/think-data/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/think-data/assets/custom/custom.css">
 
   <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
@@ -598,7 +598,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 
   <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="/jupyter-book/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script src="/think-data/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
   <script>var initQuery = function() {
   // See if we have a search box
   var searchInput = document.querySelector('input#lunr_search');
@@ -694,8 +694,8 @@ initFunction(initQuery);
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyter.org/jupyter-book/intro.html"><img src="/jupyter-book/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
-  <h2 class="c-sidebar__title">Jupyter Book</h2>
+  <a href="https://github.com/kailu3/think-data"><img src="/think-data/images/logo/jupyter.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <h2 class="c-sidebar__title">Think Data</h2>
   <ul class="c-sidebar__chapters">
     
       
@@ -708,10 +708,10 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/intro.html"
+          href="/think-data/preface.html"
         >
           
-          Home
+          Preface
         </a>
 
         
@@ -721,7 +721,11 @@ initFunction(initQuery);
     
       
       
-        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/jupyter-book/search.html">Search</a></li>
+        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/think-data/search.html">Search</a></li>
+        
+      
+      
+        <li class="c-sidebar__divider"></li>
         
       
       
@@ -733,7 +737,7 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/guide/01_overview.html"
+          href="/think-data/getting-started/installation.html"
         >
           
           Getting started
@@ -755,10 +759,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/02_create.html"
+                  href="/think-data/getting-started/intro_jupyter.html"
                 >
                   
-                  Create your book
+                  Introduction to Jupyter
                 </a>
 
                 
@@ -772,10 +776,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/03_build.html"
+                  href="/think-data/getting-started/shortcuts.html"
                 >
                   
-                  Build and publish your book
+                  Useful Shortcuts
                 </a>
 
                 
@@ -789,27 +793,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/04_faq.html"
+                  href="/think-data/getting-started/extensions.html"
                 >
                   
-                  FAQ
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/05_advanced.html"
-                >
-                  
-                  How-to and advanced topics
+                  Useful Extensions
                 </a>
 
                 
@@ -834,144 +821,13 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/features/features.html"
+          href="/think-data/basics/test_notebook.html"
         >
           
-          Features and customization
+          Notebook Testing
         </a>
 
         
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections ">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/markdown.html"
-                >
-                  
-                  Markdown files
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/notebooks.html"
-                >
-                  
-                  Jupyter notebooks
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/hiding.html"
-                >
-                  
-                  Hiding code blocks or entire cells
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/interact.html"
-                >
-                  
-                  Connecting content with JupyterHub and Binder
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/interactive_cells.html"
-                >
-                  
-                  Adding interactivity to your book pages
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/search.html"
-                >
-                  
-                  Searching your book
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/limits.html"
-                >
-                  
-                  Feature Limits
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
       </li>
 
       
@@ -986,473 +842,12 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="https://github.com/jupyter/jupyter-book"
+          href="https://github.com/kailu3/think-data"
         >
           
           GitHub repository
         </a>
 
-        
-      </li>
-
-      
-    
-      
-      
-        <li class="c-sidebar__divider"></li>
-        
-      
-      
-        <li><h2 class="c-sidebar__title">Demo textbook</li>
-        
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/01/what-is-data-science.html"
-        >
-          
-            1.
-          
-          Data Science
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/1/intro.html"
-                >
-                  
-                    1.1
-                  
-                  Introduction
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/2/why-data-science.html"
-                >
-                  
-                    1.2
-                  
-                  Why Data Science?
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/3/Plotting_the_Classics.html"
-                >
-                  
-                    1.3
-                  
-                  Plotting the Classics
-                </a>
-
-                
-                
-                  
-                  
-
-                  <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
-                      href="/jupyter-book/01/3/subsection/subsections.html"
-                    >
-                      
-                        1.3.1
-                        
-                      
-                      Subsection Demo 1
-                    </a>
-                
-                  
-                  
-
-                  <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
-                      href="/jupyter-book/01/3/subsection/subsectiontwo.html"
-                    >
-                      
-                        1.3.2
-                        
-                      
-                      Subsection Demo 2
-                    </a>
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/02/causality-and-experiments.html"
-        >
-          
-            2.
-          
-          Causality and Experiments
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html"
-                >
-                  
-                    2.1
-                  
-                  John Snow and the Broad Street Pump
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/2/snow-s-grand-experiment.html"
-                >
-                  
-                    2.2
-                  
-                  Snow’s “Grand Experiment”
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/3/establishing-causality.html"
-                >
-                  
-                    2.3
-                  
-                  Establishing Causality
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/4/randomization.html"
-                >
-                  
-                    2.4
-                  
-                  Randomization
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/5/endnote.html"
-                >
-                  
-                    2.5
-                  
-                  Endnote
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/03/programming-in-python.html"
-        >
-          
-            3.
-          
-          Programming in Python
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/1/Expressions.html"
-                >
-                  
-                    3.1
-                  
-                  Expressions
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/2/Names.html"
-                >
-                  
-                    3.2
-                  
-                  Names
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/3/Calls.html"
-                >
-                  
-                    3.3
-                  
-                  Call Expressions
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/4/Introduction_to_Tables.html"
-                >
-                  
-                    3.4
-                  
-                  Introduction to Tables
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/04/Types.html"
-        >
-          
-            4.
-          
-          Data Types
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/1/Numbers.html"
-                >
-                  
-                    4.1
-                  
-                  Numbers
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/2/Strings.html"
-                >
-                  
-                    4.2
-                  
-                  Strings
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/3/Comparison.html"
-                >
-                  
-                    4.3
-                  
-                  Comparisons
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
         
       </li>
 
@@ -1495,7 +890,7 @@ initFunction(initQuery);
             "Chapter 1: Introduction Data are descriptions of the world around us, collected through observation and stored on computers. Computers enable us to infer properties of the world from these descriptions. Data science is the discipline of drawing conclusions from data using computation. There are three core aspects of effective data analysis: exploration, prediction, and inference. This text develops a consistent approach to all three, introducing statistical ideas and fundamental ideas in computer science concurrently. We focus on a minimal set of core techniques that they apply to a vast range of real-world applications. A foundation in data science requires not...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/01/1/intro.html",
+        "url": "http://0.0.0.0:4000/think-data/01/1/intro.html",
         "teaser":null},{
         "title": "Why Data Science?",
         
@@ -1503,7 +898,7 @@ initFunction(initQuery);
             "Why Data Science? Most important decisions are made with only partial information and uncertain outcomes. However, the degree of uncertainty for many decisions can be reduced sharply by public access to large data sets and the computational tools required to analyze them effectively. Data-driven decision making has already transformed a tremendous breadth of industries, including finance, advertising, manufacturing, and real estate. At the same time, a wide range of academic disciplines are evolving rapidly to incorporate large-scale data analysis into their theory and practice. Studying data science enables individuals to bring these techniques to bear on their work, their scientific...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/01/2/why-data-science.html",
+        "url": "http://0.0.0.0:4000/think-data/01/2/why-data-science.html",
         "teaser":null},{
         "title": "Plotting the Classics",
         
@@ -1511,7 +906,7 @@ initFunction(initQuery);
             "In this example, we will explore statistics for two classic novels: The Adventures of Huckleberry Finn by Mark Twain, and Little Women by Louisa May Alcott. The text of any book can be read by a computer at great speed. Books published before 1923 are currently in the public domain, meaning that everyone has the right to copy or use the text in any way. Project Gutenberg is a website that publishes public domain books online. Using Python, we can load the text of these books directly from the web. This example is meant to illustrate some of the broad...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/01/3/Plotting_the_Classics.html",
+        "url": "http://0.0.0.0:4000/think-data/01/3/Plotting_the_Classics.html",
         "teaser":null},{
         "title": "Subsection Demo 1",
         
@@ -1519,7 +914,7 @@ initFunction(initQuery);
             "Subsections   You can also add subsections to your markdown files. These will be displayed along with the sidebar!  ",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/01/3/subsection/subsections.html",
+        "url": "http://0.0.0.0:4000/think-data/01/3/subsection/subsections.html",
         "teaser":null},{
         "title": "Subsection Demo 2",
         
@@ -1527,7 +922,7 @@ initFunction(initQuery);
             "A second subsection page   And here’s another subsection page!  ",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/01/3/subsection/subsectiontwo.html",
+        "url": "http://0.0.0.0:4000/think-data/01/3/subsection/subsectiontwo.html",
         "teaser":null},{
         "title": "Data Science",
         
@@ -1535,7 +930,7 @@ initFunction(initQuery);
             "What is Data Science Data Science is about drawing useful conclusions from large and diverse data sets through exploration, prediction, and inference. Exploration involves identifying patterns in information. Prediction involves using information we know to make informed guesses about values we wish we knew. Inference involves quantifying our degree of certainty: will those patterns we found also appear in new observations? How accurate are our predictions? Our primary tools for exploration are visualizations and descriptive statistics, for prediction are machine learning and optimization, and for inference are statistical tests and models. Statistics is a central component of data science because...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/01/what-is-data-science.html",
+        "url": "http://0.0.0.0:4000/think-data/01/what-is-data-science.html",
         "teaser":null},{
         "title": "John Snow and the Broad Street Pump",
         
@@ -1543,7 +938,7 @@ initFunction(initQuery);
             "Observation and Visualization: John Snow and the Broad Street Pump One of the earliest examples of astute observation eventually leading to the establishment of causality dates back more than 150 years. To get your mind into the right timeframe, try to imagine London in the 1850’s. It was the world’s wealthiest city but many of its people were desperately poor. Charles Dickens, then at the height of his fame, was writing about their plight. Disease was rife in the poorer parts of the city, and cholera was among the most feared. It was not yet known that germs cause disease;...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html",
+        "url": "http://0.0.0.0:4000/think-data/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html",
         "teaser":null},{
         "title": "Snow’s “Grand Experiment”",
         
@@ -1551,7 +946,7 @@ initFunction(initQuery);
             "Snow’s “Grand Experiment” Encouraged by what he had learned in Soho, Snow completed a more thorough analysis of cholera deaths. For some time, he had been gathering data on cholera deaths in an area of London that was served by two water companies. The Lambeth water company drew its water upriver from where sewage was discharged into the River Thames. Its water was relatively clean. But the Southwark and Vauxhall (S&amp;V) company drew its water below the sewage discharge, and thus its supply was contaminated. The map below shows the areas served by the two companies. Snow honed in on...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/02/2/snow-s-grand-experiment.html",
+        "url": "http://0.0.0.0:4000/think-data/02/2/snow-s-grand-experiment.html",
         "teaser":null},{
         "title": "Establishing Causality",
         
@@ -1559,7 +954,7 @@ initFunction(initQuery);
             "Establishing Causality In the language developed earlier in the section, you can think of the people in the S&amp;V houses as the treatment group, and those in the Lambeth houses at the control group. A crucial element in Snow’s analysis was that the people in the two groups were comparable to each other, apart from the treatment. In order to establish whether it was the water supply that was causing cholera, Snow had to compare two groups that were similar to each other in all but one aspect–their water supply. Only then would he be able to ascribe the differences...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/02/3/establishing-causality.html",
+        "url": "http://0.0.0.0:4000/think-data/02/3/establishing-causality.html",
         "teaser":null},{
         "title": "Randomization",
         
@@ -1567,7 +962,7 @@ initFunction(initQuery);
             "Randomization An excellent way to avoid confounding is to assign individuals to the treatment and control groups at random, and then administer the treatment to those who were assigned to the treatment group. Randomization keeps the two groups similar apart from the treatment. If you are able to randomize individuals into the treatment and control groups, you are running a randomized controlled experiment, also known as a randomized controlled trial (RCT). Sometimes, people’s responses in an experiment are influenced by their knowing which group they are in. So you might want to run a blind experiment in which individuals do...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/02/4/randomization.html",
+        "url": "http://0.0.0.0:4000/think-data/02/4/randomization.html",
         "teaser":null},{
         "title": "Endnote",
         
@@ -1575,7 +970,7 @@ initFunction(initQuery);
             "Endnote In the terminology of that we have developed, John Snow conducted an observational study, not a randomized experiment. But he called his study a “grand experiment” because, as he wrote, “No fewer than three hundred thousand people … were divided into two groups without their choice, and in most cases, without their knowledge …” Studies such as Snow’s are sometimes called “natural experiments.” However, true randomization does not simply mean that the treatment and control groups are selected “without their choice.” The method of randomization can be as simple as tossing a coin. It may also be quite a...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/02/5/endnote.html",
+        "url": "http://0.0.0.0:4000/think-data/02/5/endnote.html",
         "teaser":null},{
         "title": "Causality and Experiments",
         
@@ -1583,7 +978,7 @@ initFunction(initQuery);
             "Causality and Experiments “These problems are, and will probably ever remain, among the inscrutable secrets of nature. They belong to a class of questions radically inaccessible to the human intelligence.” —The Times of London, September 1849, on how cholera is contracted and spread Does the death penalty have a deterrent effect? Is chocolate good for you? What causes breast cancer? All of these questions attempt to assign a cause to an effect. A careful examination of data can help shed light on questions like these. In this section you will learn some of the fundamental concepts involved in establishing causality....",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/02/causality-and-experiments.html",
+        "url": "http://0.0.0.0:4000/think-data/02/causality-and-experiments.html",
         "teaser":null},{
         "title": "Expressions",
         
@@ -1591,7 +986,7 @@ initFunction(initQuery);
             "3.1 Expressions Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the Python programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs. Programs are made up of expressions, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a * symbol between two numerical expressions. Expressions, such as 3 * 4, are...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/03/1/Expressions.html",
+        "url": "http://0.0.0.0:4000/think-data/03/1/Expressions.html",
         "teaser":null},{
         "title": "Names",
         
@@ -1599,7 +994,7 @@ initFunction(initQuery);
             "3.2 Names Names are given to values in Python using an assignment statement. In an assignment, a name is followed by =, which is followed by any expression. The value of the expression to the right of = is assigned to the name. Once a name has a value assigned to it, the value will be substituted for that name in future expressions. a = 10 b = 20 a + b 30 A previously assigned name can be used in the expression to the right of =. quarter = 1/4 half = 2 * quarter half 0.5 However, only...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/03/2/Names.html",
+        "url": "http://0.0.0.0:4000/think-data/03/2/Names.html",
         "teaser":null},{
         "title": "Call Expressions",
         
@@ -1607,7 +1002,7 @@ initFunction(initQuery);
             "Call expressions invoke functions, which are named operations. The name of the function appears first, followed by expressions in parentheses. abs(-12) 12 round(5 - 1.3) 4 max(2, 2 + 3, 4) 5 In this last example, the max function is called on three arguments: 2, 5, and 4. The value of each expression within parentheses is passed to the function, and the function returns the final value of the full call expression. The max function can take any number of arguments and returns the maximum. A few functions are available by default, such as abs and round, but most functions...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/03/3/Calls.html",
+        "url": "http://0.0.0.0:4000/think-data/03/3/Calls.html",
         "teaser":null},{
         "title": "Introduction to Tables",
         
@@ -1615,7 +1010,7 @@ initFunction(initQuery);
             "We can now apply Python to analyze data. We will work with data stored in Table structures. Tables are a fundamental way of representing data sets. A table can be viewed in two ways: a sequence of named columns that each describe a single attribute of all entries in a data set, or a sequence of rows that each contain all information about a single individual in a data set. We will study tables in great detail in the next several chapters. For now, we will just introduce a few methods without going into technical details. The table cones has...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/03/4/Introduction_to_Tables.html",
+        "url": "http://0.0.0.0:4000/think-data/03/4/Introduction_to_Tables.html",
         "teaser":null},{
         "title": "Programming in Python",
         
@@ -1623,7 +1018,7 @@ initFunction(initQuery);
             "Programming in Python   Programming can dramatically improve our ability to collect and analyze information about the world, which in turn can lead to discoveries through the kind of careful reasoning demonstrated in the previous section. In data science, the purpose of writing a program is to instruct a computer to carry out the steps of an analysis. Computers cannot study the world on their own. People must describe precisely what steps the computer should take in order to collect and analyze data, and those steps are expressed through programs.   ",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/03/programming-in-python.html",
+        "url": "http://0.0.0.0:4000/think-data/03/programming-in-python.html",
         "teaser":null},{
         "title": "Numbers",
         
@@ -1631,7 +1026,7 @@ initFunction(initQuery);
             "Computers are designed to perform numerical calculations, but there are some important details about working with numbers that every programmer working with quantitative data should know. Python (and most other programming languages) distinguishes between two different types of numbers: Integers are called int values in the Python language. They can only represent whole numbers (negative, zero, or positive) that don’t have a fractional component Real numbers are called float values (or floating point values) in the Python language. They can represent whole or fractional numbers but have some limitations. The type of a number is evident from the way it...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/04/1/Numbers.html",
+        "url": "http://0.0.0.0:4000/think-data/04/1/Numbers.html",
         "teaser":null},{
         "title": "Strings",
         
@@ -1639,7 +1034,7 @@ initFunction(initQuery);
             "Much of the world’s data is text, and a piece of text represented in a computer is called a string. A string can represent a word, a sentence, or even the contents of every book in a library. Since text can include numbers (like this: 5) or truth values (True), a string can also describe those things. The meaning of an expression depends both upon its structure and the types of values that are being combined. So, for instance, adding two strings together produces another string. This expression is still an addition expression, but it is combining a different type...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/04/2/Strings.html",
+        "url": "http://0.0.0.0:4000/think-data/04/2/Strings.html",
         "teaser":null},{
         "title": "Comparisons",
         
@@ -1647,7 +1042,7 @@ initFunction(initQuery);
             "Boolean values most often arise from comparison operators. Python includes a variety of operators that compare values. For example, 3 is larger than 1 + 1. 3 &gt; 1 + 1 True The value True indicates that the comparison is valid; Python has confirmed this simple fact about the relationship between 3 and 1+1. The full set of common comparison operators are listed below. Comparison Operator True example False Example Less than &lt; 2 &lt; 3 2 &lt; 2 Greater than &gt; 3&gt;2 3&gt;3 Less than or equal &lt;= 2 &lt;= 2 3 &lt;= 2 Greater or equal &gt;= 3...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/04/3/Comparison.html",
+        "url": "http://0.0.0.0:4000/think-data/04/3/Comparison.html",
         "teaser":null},{
         "title": "Data Types",
         
@@ -1655,7 +1050,15 @@ initFunction(initQuery);
             "Every value has a type, and the built-in type function returns the type of the result of any expression.   One type we have encountered already is a built-in function. Python indicates that the type is a builtin_function_or_method; the distinction between a function and a method is not important at this stage.           type(abs)                          builtin_function_or_method                   This chapter will explore many useful types of data.   ",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/04/Types.html",
+        "url": "http://0.0.0.0:4000/think-data/04/Types.html",
+        "teaser":null},{
+        "title": "Notebook Testing",
+        
+        "excerpt":
+            "%matplotlib inline import numpy as np import pandas as pd import pandas_profiling import matplotlib.pyplot as plt import seaborn as sns import re cancun = pd.read_csv('../data/interim/cancun_unclean.csv') # Initial report for exploratory # profile = cancun.profile_report(title='Pandas Profiling Report') # profile.to_file(output_file=\"cancun_unclean.html\") Inital Exploration cancun.shape (6673, 37) cancun.isnull().sum().sort_values(ascending=False).head(7) localized_neighborhood 6673 star_rating 3044 response_time 1217 listing_name 7 bathrooms 2 bedrooms 2 currency 0 dtype: int64 Dealing with Missing Values Spider scraped 37 fields for around 6673 listings in Cancún but not all fields are important or have no missing values. That said, there is some manual selection to be done. Since there are only 37...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/test_notebook.html",
         "teaser":null},{
         "title": "Features and customization",
         
@@ -1663,7 +1066,7 @@ initFunction(initQuery);
             "Features   This is a short demonstration textbook to show the general layout / style of textbooks built with Jupyter and Jekyll.   To begin, click on one of the chapter sections in the sidebar to the left. Alternatively, click on the “next” button below in order to read further.   The first sections demonstrate some simple functionality of Jupyter Books, while the final chapters contain a subset of content from the Foundations in Data Science textbook.  ",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/features.html",
+        "url": "http://0.0.0.0:4000/think-data/features/features.html",
         "teaser":null},{
         "title": "Hiding code blocks or entire cells",
         
@@ -1671,7 +1074,7 @@ initFunction(initQuery);
             "Hiding or removing code blocks or entire cells It’s possible to control which cells show up in your final book pages. For example, you may want to display a complex visualization to illustrate an idea, but don’t want the page to be cluttered with a large code cell that generated the viz. In other cases, you may want to remove a code cell entirely. In this case, you have two options: Hiding the inputs of a code cell will hide the cell’s contents and provide a button that lets readers reveal the content. Removing the inputs (or the entire cell)...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/hiding.html",
+        "url": "http://0.0.0.0:4000/think-data/features/hiding.html",
         "teaser":null},{
         "title": "Connecting content with JupyterHub and Binder",
         
@@ -1679,7 +1082,7 @@ initFunction(initQuery);
             "Connecting content with JupyterHub and Binder Because Jupyter Books are built with Jupyter Notebooks, you can connect your online book with a Jupyter kernel running in the cloud. This lets readers quickly interact with your content in a traditional coding interface using either JupyterHub or BinderHub. This page describes a few ways to accomplish this. Creating interact buttons for BinderHub BinderHub can be used to build the environment needed to run a repository, and provides a link that lets others interact with that repository. If your Jupyter Book is hosted online on GitHub, you can automatically insert buttons that link...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/interact.html",
+        "url": "http://0.0.0.0:4000/think-data/features/interact.html",
         "teaser":null},{
         "title": "Adding interactivity to your book pages",
         
@@ -1687,7 +1090,7 @@ initFunction(initQuery);
             "Interactive code in your book Sometimes you’d rather let people interact with code directly on the page instead of sending them off to a Binder or a JupyterHub. There are currently a few ways to make this happen in Jupyter Book (both of which are experimental). This page describes how to bring interactivity to your book. Both of these tools use MyBinder to provide a remote kernel. Making your page inputs interactive ✨experimental✨ If you’d like to provide interactivity for your content without making your readers leave the Jupyter Book site, you can use a project called Thebelab. This provides...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/interactive_cells.html",
+        "url": "http://0.0.0.0:4000/think-data/features/interactive_cells.html",
         "teaser":null},{
         "title": "Feature Limits",
         
@@ -1695,7 +1098,7 @@ initFunction(initQuery);
             "Demo page to showcase markdown NOTE: None of the information on this page applies to Jupyter Books. It is taken from the Markdown documentation, and is meant to give an idea of how Jupyter Book renders really long pages of very diverse content! Amount of Content You should be able to put as much content, and as many headings, within each chapter as you want. In order to enable this we allow the table of contents on the right hand side to be scrollable. All of the sections on here allow us to test that. And they’ll give you a...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/limits.html",
+        "url": "http://0.0.0.0:4000/think-data/features/limits.html",
         "teaser":null},{
         "title": "Markdown files",
         
@@ -1703,7 +1106,7 @@ initFunction(initQuery);
             "Creating book content The two kinds of files that contain course content are: Jupyter Notebooks Markdown files Each are contained in the content/ folder and referenced from _data/toc.yml. If the file is markdown, it will be copied over with front-matter YAML added so that Jekyll can parse it. print(\"Python (and any language-specific) code still works as expected\") As does non-language code. Sidebars with Jekyll You may notice that there’s a sidebar to the right (if your screen is wide enough). These are automatically generated from the headers that are present in your page. The sidebar will automatically capture all 2nd...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/markdown.html",
+        "url": "http://0.0.0.0:4000/think-data/features/markdown.html",
         "teaser":null},{
         "title": "Jupyter notebooks",
         
@@ -1711,7 +1114,7 @@ initFunction(initQuery);
             "Content with notebooks You can also create content with Jupyter Notebooks. The content for the current page is contained in a Jupyter Notebook in the notebooks/ folder of the repository. This means that we can include code blocks and their outputs, and export them to Jekyll markdown. You can find the original notebook for this page at this address Markdown + notebooks As it is markdown, you can embed images, HTML, etc into your posts! You an also $add_{math}$ and or But make sure you \\$Escape \\$your \\$dollar signs \\$you want to keep! Code blocks and image outputs Textbooks with...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/notebooks.html",
+        "url": "http://0.0.0.0:4000/think-data/features/notebooks.html",
         "teaser":null},{
         "title": "Searching your book",
         
@@ -1719,7 +1122,39 @@ initFunction(initQuery);
             "Searching your book It’s possible to enable search in your book so that users can find the content they’re looking for. This uses a nifty package called lunr.js. To add search to your book, simple add the following entry to _data/toc.yml. - title: Search (whatever title you like) search: true The result will be a link in your Table of Contents that directs users to a search page. For example, click the Search link in the TOC of this demo book. Customizing how much text is stored in search The Jupyter-Book search works by storing excerpts of text from each...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/features/search.html",
+        "url": "http://0.0.0.0:4000/think-data/features/search.html",
+        "teaser":null},{
+        "title": "Useful Extensions",
+        
+        "excerpt":
+            "Useful Extensions (Optional) There are also a number of extensions that add functionality to the Jupyter Notebook. This section is totally optional but I’ve found some of the extensions to be quite useful. Essentially, extensions are add-ons to extend the functionality of Jupyter Notebooks. If you use Anaconda, you can get started by running in the Terminal: conda install -c conda-forge jupyter_contrib_nbextensions If you use pip, you can run the Terminal: pip install jupyter_contrib_nbextensions &amp;&amp; jupyter contrib nbextension install If you have Jupyter currently running, you will need to restart it by pressing CTRL+C and then Y to confirm to...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/getting-started/extensions.html",
+        "teaser":null},{
+        "title": "Getting started",
+        
+        "excerpt":
+            "Installation There are multiple ways to install Python. The easiest way to do so is through the Anaconda distribution which comes in two flavours: Anaconda Anaconda is a very large installation (~3GB) and is most useful for users who are not familiar with installing modules or packages with other package managers. Choose Anaconda if you: Are new to conda or Python Like the convenience of having Python and over 150 scientific packages automatically installed at once Have the time and disk space You can install Anaconda here. Make sure to get the Python 3 version. Miniconda Miniconda simply gives you...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/getting-started/installation.html",
+        "teaser":null},{
+        "title": "Intro to Jupyter",
+        
+        "excerpt":
+            "Introduction to Jupyter For all of this book, we will be working in Jupyter Notebooks, which is a web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. I like to think of Jupyter Notebooks as the perfect medium for doing and sharing exploratory data analysis work. To me, Notebooks are the ideal sandbox for playing around with new ideas and tools. Creating Your First Jupyter Notebook Depending on how you installed Jupyter, there are several ways to open up a Jupyter Notebook. One of them is through the Anaconda Navigator...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/getting-started/intro_jupyter.html",
+        "teaser":null},{
+        "title": "Useful Shortcuts",
+        
+        "excerpt":
+            "Common Shortcuts Before we start coding, I would like to share a few common Jupyter Notebook shortcuts that make navigating and editing code so much easier. These are all pretty basic and there are other more advanced shortcuts that I’ll link to at the end. Navigating and Editing There are two modes in Jupyter: edit mode and command mode. You can enter edit mode by pressing the ENTER key and switch back to command mode by pressing the ESC key. In edit mode you can type input into the selected cell while in command mode you are able to navigate...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/getting-started/shortcuts.html",
         "teaser":null},{
         "title": "Getting started",
         
@@ -1727,7 +1162,7 @@ initFunction(initQuery);
             "The Jupyter Book Guide This is a guide for creating your own book using Jupyter Notebooks and Jekyll. Book content is written in markdown and Jupyter Notebooks, and jupyter-book converts these into a book fit for hosting on the web. Install the command-line interface First off, make sure you have the CLI installed so that you can work with Jupyter Book. The Jupyter-Book CLI allows you to create, build, upgrade, and otherwise control your Jupyter Book. You can install it via pip with the following command: pip install jupyter-book A quick tour of a Jupyter Book Jupyter-Book comes with a...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/guide/01_overview.html",
+        "url": "http://0.0.0.0:4000/think-data/guide/01_overview.html",
         "teaser":null},{
         "title": "Create your book",
         
@@ -1735,7 +1170,7 @@ initFunction(initQuery);
             "Create your Jupyter Book This page covers how to create a Jupyter Book with your own content. You’ve got three primary ways to create your Jupyter Book. by starting with a minimal book Running the following command will create a new Jupyter Book with a few content pages and a Table of Contents to get you started: jupyter-book create mybookname This will create a new book using your content in mybookname/. You’ll then need to Add your content to mybookname/content/ Modify mybookname/_data/toc.yml to match your content Modify mybookname/_config.yml to the configuration you’d like Note that if you choose to create...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/guide/02_create.html",
+        "url": "http://0.0.0.0:4000/think-data/guide/02_create.html",
         "teaser":null},{
         "title": "Build and publish your book",
         
@@ -1743,7 +1178,7 @@ initFunction(initQuery);
             "Building and publishing your book Once you’ve added content and configured your book, it’s time to build the raw material that Jekyll will use to turn your book into a website. We’ll also cover how to turn this book into the HTML for a website that can be served online. Build the book’s markdown Now that you’ve got the files installed content is in the book, you can build your book. Build your book by running the following command: jupyter-book build mybookname/ This will: Use the links specified in the _data/toc.yml file (pointing to files in /content/) and do the...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/guide/03_build.html",
+        "url": "http://0.0.0.0:4000/think-data/guide/03_build.html",
         "teaser":null},{
         "title": "FAQ",
         
@@ -1751,7 +1186,7 @@ initFunction(initQuery);
             "The following are some common issues and questions that have arisen when building your textbook with Jekyll. How can I update my book? Sometimes Jupyter Book will get updates that you want to incorporate into a book you’ve already built. The easiest way to do this is to use the Command-Line Interface to upgrade your book. To upgrade a pre-existing Jupyter Book, run the following command: jupyter-book upgrade path/to/mybook This will do the following: Generate a fresh Jupyter Book in mybook_UPGRADED using the content files in your current book. If this succeeds, copy over the contents of mybook_UPGRADED into your...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/guide/04_faq.html",
+        "url": "http://0.0.0.0:4000/think-data/guide/04_faq.html",
         "teaser":null},{
         "title": "How-to and advanced topics",
         
@@ -1759,15 +1194,23 @@ initFunction(initQuery);
             "This page contains more advanced and complete information about the jupyter-book repository. See the sections below. Enable Google Analytics If you have a Google Account, you can use Google Analytics to collect some information on the traffic to your Jupyter Book. With this tool, you can find out how many people are using your site, where they come from and how they access it, wether they are using the Desktop or the mobile version etc. To add Google Analytics to your Jupyter Book, navigate to Google Analytics, create a new Google Analytics account and add the url of your Jupyter...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/guide/05_advanced.html",
+        "url": "http://0.0.0.0:4000/think-data/guide/05_advanced.html",
         "teaser":null},{
         "title": "Home",
         
         "excerpt":
-            "Books with Jupyter and Jekyll Jupyter Books lets you build an online book using a collection of Jupyter Notebooks and Markdown files. Its output is similar to the excellent Bookdown tool, and adds extra functionality for people running a Jupyter stack. For an example of a book built with Jupyter Books, see the textbook for Data 100 at UC Berkeley (or this website!) Here are a few features of Jupyter Books A Command-Line Interface (CLI) to quickly create, build, and upgrade books. Write book content in markdown and Jupyter Notebooks Convert these into Jekyll pages that can be hosted for...",
+            "Preface This is a book documenting the useful things I’ve learned in CIS 105 Computational Data Exploration and well as useful Python snippets here and there I like to use for data analysis. Who Is This Book For? For students in CIS 105 and anyone looking for an easy introduction to learn Python for data analysis. Over the past months, I’ve received a lot of questions about how to best learn Python for data analysis from scratch as a lot of the introductory resources out there seem to assume some computer science knowledge which can be daunting for some. My...",
         "categories": [],
         "tags": [],
-        "url": "http://0.0.0.0:4000/jupyter-book/intro.html",
+        "url": "http://0.0.0.0:4000/think-data/intro.html",
+        "teaser":null},{
+        "title": "Preface",
+        
+        "excerpt":
+            "Preface This is a book documenting the useful things I’ve learned in CIS 105 Computational Data Exploration and well as useful Python snippets here and there I like to use for data analysis. Who Is This Book For? For students in CIS 105 and anyone looking for an easy introduction to learn Python for data analysis. Over the past months, I’ve received a lot of questions about how to best learn Python for data analysis from scratch as a lot of the introductory resources out there seem to assume some computer science knowledge which can be daunting for some. My...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/preface.html",
         "teaser":null},]
 </script>
               <nav class="c-page__nav">

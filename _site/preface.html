@@ -7,16 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Books with Jupyter and Jekyll</title>
-  <meta name="description" content="This is an example book built with Jupyter Books.">
+  <title>Preface</title>
+  <meta name="description" content="Preface">
 
-  <link rel="canonical" href="http://0.0.0.0:4000/jupyter-book/content/intro.html">
-  <link rel="alternate" type="application/rss+xml" title="Jupyter Book" href="http://0.0.0.0:4000/jupyter-book/feed.xml">
+  <link rel="canonical" href="http://0.0.0.0:4000/think-data/preface.html">
+  <link rel="alternate" type="application/rss+xml" title="Think Data" href="http://0.0.0.0:4000/think-data/feed.xml">
 
-  <meta property="og:url"         content="http://0.0.0.0:4000/jupyter-book/content/intro.html" />
+  <meta property="og:url"         content="http://0.0.0.0:4000/think-data/preface.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Books with Jupyter and Jekyll" />
-<meta property="og:description" content="This is an example book built with Jupyter Books." />
+<meta property="og:title"       content="Preface" />
+<meta property="og:description" content="Preface" />
 <meta property="og:image"       content="" />
 
 
@@ -25,39 +25,39 @@
   "@context": "http://schema.org",
   "@type": "NewsArticle",
   "mainEntityOfPage":
-    "http://0.0.0.0:4000/jupyter-book/content/intro.html",
+    "http://0.0.0.0:4000/think-data/preface.html",
   "headline":
-    "Books with Jupyter and Jekyll",
+    "Preface",
   "datePublished":
-    "2019-08-08T11:12:03-05:00",
+    "2019-08-08T13:57:26-05:00",
   "dateModified":
-    "2019-08-08T11:12:03-05:00",
+    "2019-08-08T13:57:26-05:00",
   "description":
-    "This is an example book built with Jupyter Books.",
+    "Preface",
   "author": {
     "@type": "Person",
-    "name": "The Jupyter Book Community"
+    "name": "Kai Lu"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://0.0.0.0:4000/jupyter-book",
+      "url": "http://0.0.0.0:4000/think-data",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://0.0.0.0:4000/jupyter-book",
+    "url": "http://0.0.0.0:4000/think-data",
     "height": 60,
     "width": 60
   }
 }
 
   </script>
-  <link rel="stylesheet" href="/jupyter-book/assets/css/styles.css">
+  <link rel="stylesheet" href="/think-data/assets/css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -76,7 +76,7 @@
   <meta name="theme-color" content="#233947">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/jupyter-book/images/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/think-data/images/logo/favicon.ico">
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
@@ -120,11 +120,11 @@ initFunction = function(myfunc) {
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = '/jupyter-book';
+    const site_basename = '/think-data';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
-  <script src="/jupyter-book/assets/js/anchor.min.js"  type="text/javascript"></script>
+  <script src="/think-data/assets/js/anchor.min.js"  type="text/javascript"></script>
   <script>
 
 initFunction(function () {
@@ -135,7 +135,7 @@ initFunction(function () {
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="/jupyter-book/assets/js/turbolinks.js" async></script>
+  <script src="/think-data/assets/js/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Load nbinteract for widgets -->
@@ -153,7 +153,7 @@ initFunction(function () {
 
 const thebelabCellButton = id =>
   `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/jupyter-book/assets/images/edit-button.svg" alt="Start interactive mode">
+    <img src="/think-data/assets/images/edit-button.svg" alt="Start interactive mode">
   </a>`
 
 
@@ -178,8 +178,8 @@ initFunction(addThebelabButtonToCodeCells);
     {
       requestKernel: true,
       binderOptions: {
-        repo: 'jupyter/jupyter-book',
-        ref: 'gh-pages',
+        repo: 'kailu3/think-data',
+        ref: 'master',
       },
       codeMirrorConfig: {
         theme: "abcdef"
@@ -275,7 +275,7 @@ initFunction(addThebelabButtonToCodeCells);
 
 
   <!-- Load the auto-generating TOC -->
-  <script src="/jupyter-book/assets/js/tocbot.min.js"  type="text/javascript"></script>
+  <script src="/think-data/assets/js/tocbot.min.js"  type="text/javascript"></script>
   <script>
 var initToc = function () {
   tocbot.init({
@@ -294,7 +294,7 @@ initFunction(initToc);
 </script>
 
   <!-- Google analytics -->
-  <script src="/jupyter-book/assets/js/ga.js" async></script>
+  <script src="/think-data/assets/js/ga.js" async></script>
 
   <!-- Clipboard copy button -->
   <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
@@ -308,7 +308,7 @@ const codeCellId = index => `codecell${index}`
 
 const clipboardButton = id =>
   `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/jupyter-book/assets/images/copy-button.svg" alt="Copy to clipboard">
+    <img src="/think-data/assets/images/copy-button.svg" alt="Copy to clipboard">
   </a>`
 
 // Clears selected text since ClipboardJS will select the text when copying
@@ -447,11 +447,11 @@ initFunction(addCopyButtonToCodeCells);
 </script>
 
   <!-- Load custom website scripts -->
-  <script src="/jupyter-book/assets/js/scripts.js" async></script>
+  <script src="/think-data/assets/js/scripts.js" async></script>
 
   <!-- Load custom user CSS and JS  -->
-  <script src="/jupyter-book/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/jupyter-book/assets/custom/custom.css">
+  <script src="/think-data/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/think-data/assets/custom/custom.css">
 
   <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
@@ -598,7 +598,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 
   <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="/jupyter-book/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script src="/think-data/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
   <script>var initQuery = function() {
   // See if we have a search box
   var searchInput = document.querySelector('input#lunr_search');
@@ -694,8 +694,8 @@ initFunction(initQuery);
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyter.org/jupyter-book/intro.html"><img src="/jupyter-book/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
-  <h2 class="c-sidebar__title">Jupyter Book</h2>
+  <a href="https://github.com/kailu3/think-data"><img src="/think-data/images/logo/jupyter.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <h2 class="c-sidebar__title">Think Data</h2>
   <ul class="c-sidebar__chapters">
     
       
@@ -708,10 +708,10 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry c-sidebar__entry--active"
-          href="/jupyter-book/intro.html"
+          href="/think-data/preface.html"
         >
           
-          Home
+          Preface
         </a>
 
         
@@ -721,7 +721,11 @@ initFunction(initQuery);
     
       
       
-        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/jupyter-book/search.html">Search</a></li>
+        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/think-data/search.html">Search</a></li>
+        
+      
+      
+        <li class="c-sidebar__divider"></li>
         
       
       
@@ -733,7 +737,7 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/guide/01_overview.html"
+          href="/think-data/getting-started/installation.html"
         >
           
           Getting started
@@ -755,10 +759,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/02_create.html"
+                  href="/think-data/getting-started/intro_jupyter.html"
                 >
                   
-                  Create your book
+                  Introduction to Jupyter
                 </a>
 
                 
@@ -772,10 +776,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/03_build.html"
+                  href="/think-data/getting-started/shortcuts.html"
                 >
                   
-                  Build and publish your book
+                  Useful Shortcuts
                 </a>
 
                 
@@ -789,27 +793,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/04_faq.html"
+                  href="/think-data/getting-started/extensions.html"
                 >
                   
-                  FAQ
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/guide/05_advanced.html"
-                >
-                  
-                  How-to and advanced topics
+                  Useful Extensions
                 </a>
 
                 
@@ -834,144 +821,13 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/features/features.html"
+          href="/think-data/basics/test_notebook.html"
         >
           
-          Features and customization
+          Notebook Testing
         </a>
 
         
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections ">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/markdown.html"
-                >
-                  
-                  Markdown files
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/notebooks.html"
-                >
-                  
-                  Jupyter notebooks
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/hiding.html"
-                >
-                  
-                  Hiding code blocks or entire cells
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/interact.html"
-                >
-                  
-                  Connecting content with JupyterHub and Binder
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/interactive_cells.html"
-                >
-                  
-                  Adding interactivity to your book pages
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/search.html"
-                >
-                  
-                  Searching your book
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/features/limits.html"
-                >
-                  
-                  Feature Limits
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
       </li>
 
       
@@ -986,473 +842,12 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="https://github.com/jupyter/jupyter-book"
+          href="https://github.com/kailu3/think-data"
         >
           
           GitHub repository
         </a>
 
-        
-      </li>
-
-      
-    
-      
-      
-        <li class="c-sidebar__divider"></li>
-        
-      
-      
-        <li><h2 class="c-sidebar__title">Demo textbook</li>
-        
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/01/what-is-data-science.html"
-        >
-          
-            1.
-          
-          Data Science
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/1/intro.html"
-                >
-                  
-                    1.1
-                  
-                  Introduction
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/2/why-data-science.html"
-                >
-                  
-                    1.2
-                  
-                  Why Data Science?
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/01/3/Plotting_the_Classics.html"
-                >
-                  
-                    1.3
-                  
-                  Plotting the Classics
-                </a>
-
-                
-                
-                  
-                  
-
-                  <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
-                      href="/jupyter-book/01/3/subsection/subsections.html"
-                    >
-                      
-                        1.3.1
-                        
-                      
-                      Subsection Demo 1
-                    </a>
-                
-                  
-                  
-
-                  <li class="c-sidebar__subsection">
-                    <a class="c-sidebar__entry "
-                      href="/jupyter-book/01/3/subsection/subsectiontwo.html"
-                    >
-                      
-                        1.3.2
-                        
-                      
-                      Subsection Demo 2
-                    </a>
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/02/causality-and-experiments.html"
-        >
-          
-            2.
-          
-          Causality and Experiments
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/1/observation-and-visualization-john-snow-and-the-broad-street-pump.html"
-                >
-                  
-                    2.1
-                  
-                  John Snow and the Broad Street Pump
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/2/snow-s-grand-experiment.html"
-                >
-                  
-                    2.2
-                  
-                  Snow’s “Grand Experiment”
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/3/establishing-causality.html"
-                >
-                  
-                    2.3
-                  
-                  Establishing Causality
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/4/randomization.html"
-                >
-                  
-                    2.4
-                  
-                  Randomization
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/02/5/endnote.html"
-                >
-                  
-                    2.5
-                  
-                  Endnote
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/03/programming-in-python.html"
-        >
-          
-            3.
-          
-          Programming in Python
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/1/Expressions.html"
-                >
-                  
-                    3.1
-                  
-                  Expressions
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/2/Names.html"
-                >
-                  
-                    3.2
-                  
-                  Names
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/3/Calls.html"
-                >
-                  
-                    3.3
-                  
-                  Call Expressions
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/03/4/Introduction_to_Tables.html"
-                >
-                  
-                    3.4
-                  
-                  Introduction to Tables
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/jupyter-book/04/Types.html"
-        >
-          
-            4.
-          
-          Data Types
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections u-hidden-visually">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/1/Numbers.html"
-                >
-                  
-                    4.1
-                  
-                  Numbers
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/2/Strings.html"
-                >
-                  
-                    4.2
-                  
-                  Strings
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/jupyter-book/04/3/Comparison.html"
-                >
-                  
-                    4.3
-                  
-                  Comparisons
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
         
       </li>
 
@@ -1488,87 +883,62 @@ initFunction(initQuery);
             
 
             <div class="c-textbook__content">
-              <h1 id="books-with-jupyter-and-jekyll">Books with Jupyter and Jekyll</h1>
+              <h1 id="preface">Preface</h1>
 
-<p><a href="https://circleci.com/gh/jupyter/jupyter-book"><img src="https://circleci.com/gh/jupyter/jupyter-book.svg?style=svg" class="left" /></a>
-<a href="https://codecov.io/gh/jupyter/jupyter-book"><img src="https://codecov.io/gh/jupyter/jupyter-book/branch/master/graph/badge.svg" class="left" /></a>
-<a href="https://doi.org/10.5281/zenodo.2799972"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.2799972.svg" class="left" /></a></p>
-<div style="clear:both;"></div>
+<p>This is a book documenting the useful things I’ve learned in CIS 105
+Computational Data Exploration and well as useful Python snippets here and
+there I like to use for data analysis.</p>
 
-<p>Jupyter Books lets you build an online book using a collection of Jupyter Notebooks
-and Markdown files. Its output is similar to the excellent <a href="https://bookdown.org/yihui/bookdown/">Bookdown</a> tool,
-and adds extra functionality for people running a Jupyter stack.</p>
+<h2 id="who-is-this-book-for">Who Is This Book For?</h2>
 
-<p>For an example of a book built with Jupyter Books, see the <a href="https://www.textbook.ds100.org/">textbook for Data 100</a> at UC Berkeley (or this website!)</p>
+<p>For students in CIS 105 and <em>anyone</em> looking for an easy introduction to learn Python for data analysis. Over the past
+months, I’ve received a lot of questions about how to best learn Python for data analysis from <strong>scratch</strong> as a lot of the
+introductory resources out there seem to assume some computer science knowledge which can be daunting for some.
+My goal for this book is to provide an easy-to-reference guide for anyone looking to dabble in Python and teach
+the data science process from importing the dataset to being able to analyze and vizualize the data. More advanced 
+Python users will find the pacing to be slow.</p>
 
-<p>Here are a few features of Jupyter Books</p>
+<h2 id="why-python">Why Python?</h2>
 
-<ul>
-  <li>A Command-Line Interface (CLI) to quickly create, build, and upgrade books.</li>
-  <li>Write book content in markdown and Jupyter Notebooks</li>
-  <li>Convert these into Jekyll pages that can be hosted for free on GitHub</li>
-  <li>Pages can have <a href="https://mybinder.org">Binder</a>, JupyterHub, or Theblab links
-automatically added for interactivity.</li>
-  <li>The website itself is based on Jekyll and is highly extensible.</li>
-  <li>There are lots of nifty HTML features under-the-hood, such as
-Turbolinks fast-navigation and click-to-copy in code cells.</li>
-</ul>
+<p>Python has emerged over the last couple decades as a first-class tool for scientific computing tasks, including the analysis and visualization of large datasets. This probably may’ve come as a surprise to early proponents of the Python language: the language itself was not specifically designed with data analysis or scientific computing in mind. The usefulness of Python for data science stems primarily from the large and active ecosystem of third-party packages: NumPy (<em>Pronounced num-pie</em>) for manipulation of homogeneous array-based data, Pandas for manipulation of heterogeneous and labeled data, <em>SciPy</em> for common scientific computing tasks, <em>Matplotlib</em> for visualizations of data, <em>Scikit-Learn</em> for machine learning, and many more tools in the following pages. Excerpt taken from the <em>Python Data Science Handbook</em>.</p>
 
-<p>Check out other features in the <a href="features/features">Features section</a>.</p>
+<h2 id="getting-help">Getting Help</h2>
 
-<h2 id="getting-started">Getting started</h2>
+<p>While I would love to help everyone, time can be constraining. Usually, my advice is to Google it first which quite frankly in my
+opinion is an improvable skill. There is a great quote from <strong>Jake VanderPlas</strong> on this (Author of Python Data Science Handbook):</p>
 
-<p>To get started, you may be interested in the following links.
-Here are a few links of interest:</p>
+<blockquote>
+  <p>Being an effective practitioner of data science is less about memorizing the tool or command you should use for every possible situation, and more about learning to effectively find the information you don’t know, whether through a web search engine or another means.</p>
+</blockquote>
 
-<ul>
-  <li>
-    <p><strong><a href="features/features">Jupyter Book features</a></strong> is a quick demo and overview
-of Jupyter Books.</p>
-  </li>
-  <li>
-    <p><strong><a href="guide/01_overview">The Jupyter Book Guide</a></strong>
-will step you through the process of configuring and building your own Jupyter Book.</p>
-  </li>
-</ul>
+<h2 id="contributing-and-topic-requests">Contributing and Topic Requests</h2>
 
-<h3 id="installation">Installation</h3>
+<p>If you notice opportunities for improvements in terms of typos, spelling, grammar, syntax, etc., feel free to leave a comment on the right. You’ll most likely be right.</p>
 
-<p>To install the Jupyter Book command-line interface (CLI), use <code class="highlighter-rouge">pip</code>!</p>
+<p>If you have any topics that I could potentially go over or explain clearer and in more detail, please create an <strong>issue</strong> and describe the topic. You can create an issue <a href="https://github.com/kailu3/python-data-analysis/issues">here</a>. I’ll try my best to address it as soon as possible.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter-book
-</code></pre></div></div>
+<h2 id="references">References</h2>
 
-<h3 id="create-a-new-book">Create a new book</h3>
+<p>Some material from this book will be referenced from</p>
+<blockquote>
+  <p><a href="https://jakevdp.github.io/PythonDataScienceHandbook/"><em>The Python Data Science Handbook</em></a> by Jake VanderPlas (O’Reilly). Copyright 2016 Jake VanderPlas, 978-1-491-91205-8.</p>
+</blockquote>
 
-<p>Once you’ve installed the CLI, create a new book using the demo book content
-(the website that you’re viewing now) with this command:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book create mybookname --demo
-</code></pre></div></div>
-
-<h3 id="build-the-markdown-for-your-book">Build the markdown for your book</h3>
-
-<p>Now, build the markdown that Jekyll will use for your book. Run this command:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book build mybookname
-</code></pre></div></div>
-
-<h3 id="thats-it">That’s it!</h3>
-
-<p>You can now either push your book to GitHub and serve the demo with gh-pages,
-or modify the book with your own content.</p>
-
-<h2 id="acknowledgements">Acknowledgements</h2>
-
-<p>Jupyter Books was originally created by <a href="http://www.samlau.me/">Sam Lau</a> and <a href="https://predictablynoisy.com">Chris Holdgraf</a>
-with support of the <strong>UC Berkeley Data Science Education Program and the
-<a href="https://bids.berkeley.edu/">Berkeley Institute for Data Science</a></strong>.</p>
-
+<p>which is a great book to check out as a continuation and deeper dive into using Python effectively for data.</p>
 
               <nav class="c-page__nav">
   
+    
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="">
+      〈 <span class="u-margin-right-tiny"></span> 
+    </a>
+  
 
+  
+    
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/think-data/getting-started/installation.html">
+      Getting started <span class="u-margin-right-tiny"></span> 〉
+    </a>
   
 </nav>
 
