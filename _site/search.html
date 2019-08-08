@@ -29,9 +29,9 @@
   "headline":
     "Search the site",
   "datePublished":
-    "2019-08-08T14:13:12-05:00",
+    "2019-08-08T14:40:03-05:00",
   "dateModified":
-    "2019-08-08T14:13:12-05:00",
+    "2019-08-08T14:40:03-05:00",
   "description":
     "This is a book for learning data analysis with Python.",
   "author": {
@@ -821,33 +821,58 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/think-data/basics/test_notebook.html"
+          href="/think-data/basics/Preface.html"
         >
           
           Notebook Testing
         </a>
 
         
-      </li>
 
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/think-data/features/notebooks.html"
-        >
           
-          Notebook
-        </a>
+          
+          
+          
 
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/basics/IPython-Beyond-Normal-Python.html"
+                >
+                  
+                  IPython
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/basics/Help-And-Documentation.html"
+                >
+                  
+                  Help
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
         
       </li>
 
@@ -1072,6 +1097,38 @@ initFunction(initQuery);
         "categories": [],
         "tags": [],
         "url": "http://0.0.0.0:4000/think-data/04/Types.html",
+        "teaser":null},{
+        "title": "Help",
+        
+        "excerpt":
+            "This notebook contains an excerpt from the Python Data Science Handbook by Jake VanderPlas; the content is available on GitHub. The text is released under the CC-BY-NC-ND license, and code is released under the MIT license. If you find this content useful, please consider supporting the work by buying the book! &lt; IPython: Beyond Normal Python | Contents | Keyboard Shortcuts in the IPython Shell &gt; Help and Documentation in IPython If you read no other section in this chapter, read this one: I find the tools discussed here to be the most transformative contributions of IPython to my daily...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/Help-And-Documentation.html",
+        "teaser":null},{
+        "title": "IPython",
+        
+        "excerpt":
+            "This notebook contains an excerpt from the Python Data Science Handbook by Jake VanderPlas; the content is available on GitHub. The text is released under the CC-BY-NC-ND license, and code is released under the MIT license. If you find this content useful, please consider supporting the work by buying the book! &lt; Preface | Contents | Help and Documentation in IPython &gt; IPython: Beyond Normal Python There are many options for development environments for Python, and I’m often asked which one I use in my own work. My answer sometimes surprises people: my preferred environment is IPython plus a text...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/IPython-Beyond-Normal-Python.html",
+        "teaser":null},{
+        "title": "Notebook Testing",
+        
+        "excerpt":
+            "This notebook contains an excerpt from the Python Data Science Handbook by Jake VanderPlas; the content is available on GitHub. The text is released under the CC-BY-NC-ND license, and code is released under the MIT license. If you find this content useful, please consider supporting the work by buying the book! | Contents | IPython: Beyond Normal Python &gt; Preface What Is Data Science? This is a book about doing data science with Python, which immediately begs the question: what is data science? It’s a surprisingly hard definition to nail down, especially given how ubiquitous the term has become. Vocal...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/Preface.html",
+        "teaser":null},{
+        "title": "Test2",
+        
+        "excerpt":
+            "import numpy as np import pandas as pd import json import os Reads .json Files and Combines them into .csv df = pd.DataFrame() for num in np.arange(15, 995, 10): lower_bound = str(num) upper_bound = str(num + 10) filename = lower_bound + \"to\" + upper_bound + \".json\" # Check if file is empty if os.stat(filename).st_size != 0: some_df = pd.read_json(filename) df = pd.concat([df, some_df]) len(df) 6414 df.drop_duplicates(subset='url', keep='first', inplace=True) len(df) 5796 df.shape (5796, 37) df.to_csv('cancun_scrape_5.csv', index=False) df[df['url'] == 'https://www.airbnb.com/rooms/10823831'] accuracy amt_w_service avg_rating bathrooms bedrooms can_instant_book checkin cleanliness communication currency ... price rate_type response_rate response_time reviews_count room_type_category star_rating url value weekly_price_factor 76...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/test2.html",
         "teaser":null},{
         "title": "Notebook Testing",
         

@@ -39,17 +39,15 @@
 
 
 - title: Notebook Testing
-  url: /basics/test_notebook
+  url: /basics/kl-cancun-initial-exploration
   not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Data Cleaning
+    url: /basics/kl-cancun-data-cleaning
+  - title: Feature Importance
+    url: /basics/kl-cancun-feature-importance
   
-
-- title: Notebook
-  url: /features/notebooks
-  not_numbered: true
-  
-- title: Test2
-  url: /basics/test2
-  not_numbered: true
   
 
 

@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>Help</title>
+  <meta name="description" content="">
+
+  <link rel="canonical" href="http://0.0.0.0:4000/think-data/basics/Help-And-Documentation.html">
+  <link rel="alternate" type="application/rss+xml" title="Think Data" href="http://0.0.0.0:4000/think-data/feed.xml">
+
+  <meta property="og:url"         content="http://0.0.0.0:4000/think-data/basics/Help-And-Documentation.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Help" />
+<meta property="og:description" content="" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "http://0.0.0.0:4000/think-data/basics/Help-And-Documentation.html",
+  "headline":
+    "Help",
+  "datePublished":
+    "2019-08-08T14:40:03-05:00",
+  "dateModified":
+    "2019-08-08T14:40:03-05:00",
+  "description":
+    "",
+  "author": {
+    "@type": "Person",
+    "name": "Kai Lu"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://0.0.0.0:4000/think-data",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://0.0.0.0:4000/think-data",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/think-data/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/think-data/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+// Helper function to init things quickly
+initFunction = function(myfunc) {
+  runWhenDOMLoaded(myfunc);
+  document.addEventListener('turbolinks:load', myfunc);
+};
+</script>
+
+  <!-- Define some javascript variables that will be useful in other javascript -->
+  <script>
+    const site_basename = '/think-data';
+  </script>
+
+  <!-- Add AnchorJS to let headers be linked -->
+  <script src="/think-data/assets/js/anchor.min.js"  type="text/javascript"></script>
+  <script>
+
+initFunction(function () {
+    anchors.add("main h1, main h2, main h3, main h4")
+});
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/think-data/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  
+
+  <!-- Load Thebelab for interactive widgets -->
+  <!-- Include Thebelab for interactive code if it's enabled -->
+
+
+<!-- Display Thebelab button in each code cell -->
+<script>
+/**
+ * Set up thebelab button for code blocks
+ */
+
+const thebelabCellButton = id =>
+  `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
+    <img src="/think-data/assets/images/edit-button.svg" alt="Start interactive mode">
+  </a>`
+
+
+const addThebelabButtonToCodeCells =  () => {
+
+  const codeCells = document.querySelectorAll('div.input_area > div.highlighter-rouge:not(.output) pre')
+  codeCells.forEach((codeCell, index) => {
+    const id = codeCellId(index)
+    codeCell.setAttribute('id', id)
+    if (document.getElementById("thebelab-cell-button-" + id) == null) {
+      codeCell.insertAdjacentHTML('afterend', thebelabCellButton(id));
+    }
+  })
+}
+
+initFunction(addThebelabButtonToCodeCells);
+</script>
+
+
+
+<script type="text/x-thebe-config">
+    {
+      requestKernel: true,
+      binderOptions: {
+        repo: 'kailu3/think-data',
+        ref: 'master',
+      },
+      codeMirrorConfig: {
+        theme: "abcdef"
+      },
+      kernelOptions: {
+        name: 'python3',
+      }
+    }
+</script>
+<script src="https://unpkg.com/thebelab@0.4.0/lib/index.js"></script>
+<script>
+    /**
+     * Add attributes to Thebelab blocks
+     */
+
+    const initThebelab = () => {
+        const addThebelabToCodeCells = () => {
+            console.log("Adding thebelab to code cells...");
+            // If Thebelab hasn't loaded, wait a bit and try again. This
+            // happens because we load ClipboardJS asynchronously.
+            if (window.thebelab === undefined) {
+                setTimeout(addThebelabToCodeCells, 250)
+            return
+            }
+
+            // If we already detect a Thebelab cell, don't re-run
+            if (document.querySelectorAll('div.thebelab-cell').length > 0) {
+                return;
+            }
+
+            // Find all code cells, replace with Thebelab interactive code cells
+            const codeCells = document.querySelectorAll('.input_area pre')
+            codeCells.forEach((codeCell, index) => {
+                const id = codeCellId(index)
+                codeCell.setAttribute('data-executable', 'true')
+
+                // Figure out the language it uses and add this too
+                var parentDiv = codeCell.parentElement.parentElement;
+                var arrayLength = parentDiv.classList.length;
+                for (var ii = 0; ii < arrayLength; ii++) {
+                    var parts = parentDiv.classList[ii].split('language-');
+                    if (parts.length === 2) {
+                        // If found, assign dataLanguage and break the loop
+                        var dataLanguage = parts[1];
+                        break;
+                    }
+                }
+                codeCell.setAttribute('data-language', dataLanguage)
+
+                // If the code cell is hidden, show it
+                var inputCheckbox = document.querySelector(`input#hidebtn${codeCell.id}`);
+                if (inputCheckbox !== null) {
+                    setCodeCellVisibility(inputCheckbox, 'visible');
+                }
+            });
+
+            // Remove the event listener from the page so keyboard press doesn't
+            // Change page
+            document.removeEventListener('keydown', initPageNav)
+            keyboardListener = false;
+
+            // Init thebelab
+            thebelab.bootstrap();
+
+            // Remove copy buttons since they won't work anymore
+            const copyAndThebeButtons = document.querySelectorAll('.copybtn, .thebebtn')
+            copyAndThebeButtons.forEach((button, index) => {
+                button.remove();
+            });
+
+            // Remove outputs since they'll be stale
+            const outputs = document.querySelectorAll('.output *, .output')
+            outputs.forEach((output, index) => {
+                output.remove();
+            });
+        }
+
+        // Add event listener for the function to modify code cells
+        const thebelabButtons = document.querySelectorAll('[id^=thebelab], [id$=thebelab]')
+        thebelabButtons.forEach((thebelabButton,index) => {
+            if (thebelabButton === null) {
+                setTimeout(initThebelab, 250)
+                return
+            };
+            thebelabButton.addEventListener('click', addThebelabToCodeCells);
+        });
+    }
+
+    // Initialize Thebelab
+    initFunction(initThebelab);
+</script>
+
+
+
+  <!-- Load the auto-generating TOC -->
+  <script src="/think-data/assets/js/tocbot.min.js"  type="text/javascript"></script>
+  <script>
+var initToc = function () {
+  tocbot.init({
+    tocSelector: 'nav.onthispage',
+    contentSelector: '.c-textbook__content',
+    headingSelector: 'h2, h3',
+    orderedList: false,
+    collapseDepth: 6,
+    listClass: 'toc__menu',
+    activeListItemClass: "",  // Not using
+    activeLinkClass: "", // Not using
+  });
+  tocbot.refresh();
+}
+initFunction(initToc);
+</script>
+
+  <!-- Google analytics -->
+  <script src="/think-data/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load JS that depends on site variables -->
+  <script>
+/**
+ * Set up copy/paste for code blocks
+ */
+const codeCellId = index => `codecell${index}`
+
+const clipboardButton = id =>
+  `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
+    <img src="/think-data/assets/images/copy-button.svg" alt="Copy to clipboard">
+  </a>`
+
+// Clears selected text since ClipboardJS will select the text when copying
+const clearSelection = () => {
+  if (window.getSelection) {
+    window.getSelection().removeAllRanges()
+  } else if (document.selection) {
+    document.selection.empty()
+  }
+}
+
+// Changes tooltip text for two seconds, then changes it back
+const temporarilyChangeTooltip = (el, newText) => {
+  const oldText = el.getAttribute('data-tooltip')
+  el.setAttribute('data-tooltip', newText)
+  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
+}
+
+const addCopyButtonToCodeCells = () => {
+  // If ClipboardJS hasn't loaded, wait a bit and try again. This
+  // happens because we load ClipboardJS asynchronously.
+  if (window.ClipboardJS === undefined) {
+    setTimeout(addCopyButtonToCodeCells, 250)
+    return
+  }
+
+  const codeCells = document.querySelectorAll('div.c-textbook__content > div.highlighter-rouge > div.highlight > pre, div.input_area pre')
+  codeCells.forEach((codeCell, index) => {
+    const id = codeCellId(index)
+    codeCell.setAttribute('id', id)
+    if (document.getElementById("copy-button" + id) == null) {
+      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
+    }
+  })
+
+  const clipboard = new ClipboardJS('.copybtn')
+  clipboard.on('success', event => {
+    clearSelection()
+    temporarilyChangeTooltip(event.trigger, 'Copied!')
+  })
+
+  clipboard.on('error', event => {
+    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
+  })
+
+  // Get rid of clipboard before the next page visit to avoid memory leak
+  document.addEventListener('turbolinks:before-visit', () =>
+    clipboard.destroy()
+  )
+}
+
+initFunction(addCopyButtonToCodeCells);
+</script>
+
+
+  <!-- Hide cell code -->
+  <script>
+    /**
+    Add buttons to hide code cells
+    */
+
+
+    var setCodeCellVisibility = function (inputField, kind) {
+        // Update the image and class for hidden
+        var id = inputField.getAttribute('data-id');
+        var codeCell = document.querySelector(`#${id} div.highlight`);
+
+        if (kind === "visible") {
+            codeCell.classList.remove('hidden');
+            inputField.checked = true;
+        } else {
+            codeCell.classList.add('hidden');
+            inputField.checked = false;
+        }
+    }
+
+    var toggleCodeCellVisibility = function (event) {
+        // The label is clicked, and now we decide what to do based on the input field's clicked status
+        if (event.target.tagName === "LABEL") {
+            var inputField = event.target.previousElementSibling;
+        } else {
+            // It is the span inside the target
+            var inputField = event.target.parentElement.previousElementSibling;
+        }
+
+        if (inputField.checked === true) {
+            setCodeCellVisibility(inputField, "visible");
+        } else {
+            setCodeCellVisibility(inputField, "hidden");
+        }
+    }
+
+
+    // Button constructor
+    const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
+
+    var addHideButton = function () {
+        // If a hide button is already added, don't add another
+        if (document.querySelector('div.hidecode input') !== null) {
+            return;
+        }
+
+        // Find the input cells and add a hide button
+        document.querySelectorAll('div.input_area').forEach(function (item, index) {
+            if (!item.classList.contains("hidecode")) {
+                // Skip the cell if it doesn't have a hidecode class
+                return;
+            }
+
+            const id = codeCellId(index)
+            item.setAttribute('id', id);
+            // Insert the button just inside the end of the next div
+            item.querySelector('div').insertAdjacentHTML('beforeend', hideCodeButton(id))
+
+            // Set up the visibility toggle
+            hideLink = document.querySelector(`#${id} div.highlight + input + label`);
+            hideLink.addEventListener('click', toggleCodeCellVisibility)
+        });
+    }
+
+
+    // Initialize the hide buttos
+    var initHiddenCells = function () {
+        // Add hide buttons to the cells
+        addHideButton();
+
+        // Toggle the code cells that should be hidden
+        document.querySelectorAll('div.hidecode input').forEach(function (item) {
+            setCodeCellVisibility(item, 'hidden');
+            item.checked = true;
+        })
+    }
+
+    initFunction(initHiddenCells);
+
+</script>
+
+  <!-- Load custom website scripts -->
+  <script src="/think-data/assets/js/scripts.js" async></script>
+
+  <!-- Load custom user CSS and JS  -->
+  <script src="/think-data/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/think-data/assets/custom/custom.css">
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  
+<script>
+/**
+  * To auto-embed hub URLs in interact links if given in a RESTful fashion
+ */
+
+function getJsonFromUrl(url) {
+  var query = url.split('?');
+  if (query.length < 2) {
+    // No queries so just return false
+    return false;
+  }
+  query = query[1];
+  // Collect REST params into a dictionary
+  var result = {};
+  query.split("&").forEach(function(part) {
+    var item = part.split("=");
+    result[item[0]] = decodeURIComponent(item[1]);
+  });
+  return result;
+}
+    
+function dict2param(dict) {
+    params = Object.keys(dict).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(dict[k])
+    });
+    return params.join('&')
+}
+
+// Parse a Binder URL, converting it to the string needed for JupyterHub
+function binder2Jupyterhub(url) {
+  newUrl = {};
+  parts = url.split('v2/gh/')[1];
+  // Grab the base repo information
+  repoinfo = parts.split('?')[0];
+  var [org, repo, ref] = repoinfo.split('/');
+  newUrl['repo'] = ['https://github.com', org, repo].join('/');
+  newUrl['branch'] = ref
+  // Grab extra parameters passed
+  params = getJsonFromUrl(url);
+  if (params['filepath'] !== undefined) {
+    newUrl['subPath'] = params['filepath']
+  }
+  return dict2param(newUrl);
+}
+
+// Filter out potentially unsafe characters to prevent xss
+function safeUrl(url)
+{
+   return String(encodeURIComponent(url))
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
+}
+
+function addParamToInternalLinks(hub) {
+  var links = document.querySelectorAll("a").forEach(function(link) {
+    var href = link.href;
+    // If the link is an internal link...
+    if (href.search("http://0.0.0.0:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+      // Assume we're an internal link, add the hub param to it
+      var params = getJsonFromUrl(href);
+      if (params !== false) {
+        // We have REST params, so append a new one
+        params['jupyterhub'] = hub;
+      } else {
+        // Create the REST params
+        params = {'jupyterhub': hub};
+      }
+      // Update the link
+      var newHref = href.split('?')[0] + '?' + dict2param(params);
+      link.setAttribute('href', decodeURIComponent(newHref));
+    }
+  });
+  return false;
+}
+
+
+// Update interact links
+function updateInteractLink() {
+    // hack to make this work since it expects a ? in the URL
+    rest = getJsonFromUrl("?" + location.search.substr(1));
+    jupyterHubUrl = rest['jupyterhub'];
+    var hubType = null;
+    var hubUrl = null;
+    if (jupyterHubUrl !== undefined) {
+      hubType = 'jupyterhub';
+      hubUrl = jupyterHubUrl;
+    }
+
+    if (hubType !== null) {
+      // Sanitize the hubUrl
+      hubUrl = safeUrl(hubUrl);
+
+      // Add HTTP text if omitted
+      if (hubUrl.indexOf('http') < 0) {hubUrl = 'http://' + hubUrl;}
+      var interactButtons = document.querySelectorAll("button.interact-button")
+      var lastButton = interactButtons[interactButtons.length-1];
+      var link = lastButton.parentElement;
+
+      // If we've already run this, skip the link updating
+      if (link.nextElementSibling !== null) {
+        return;
+      }
+
+      // Update the link and add context div
+      var href = link.getAttribute('href');
+      if (lastButton.id === 'interact-button-binder') {
+        // If binder links exist, we need to re-work them for jupyterhub
+        if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+          // If localhost, assume we're working from a local Jupyter server and remove `/hub`
+          first = [hubUrl, 'git-sync'].join('/')
+        } else {
+          first = [hubUrl, 'hub', 'user-redirect', 'git-sync'].join('/')
+        }
+        href = first + '?' + binder2Jupyterhub(href);
+      } else {
+        // If interact button isn't binderhub, assume it's jupyterhub
+        // If JupyterHub links, we only need to replace the hub url
+        href = href.replace("", hubUrl);
+        if (hubUrl.indexOf('http%3A%2F%2Flocalhost') > -1) {
+          // Assume we're working from a local Jupyter server and remove `/hub`
+          href = href.replace("/hub/user-redirect", "");
+        }
+      }
+      link.setAttribute('href', decodeURIComponent(href));
+
+      // Add text after interact link saying where we're launching
+      hubUrlNoHttp = decodeURIComponent(hubUrl).replace('http://', '').replace('https://', '');
+      link.insertAdjacentHTML('afterend', '<div class="interact-context">on ' + hubUrlNoHttp + '</div>');
+
+      // Update internal links so we retain the hub url
+      addParamToInternalLinks(hubUrl);
+    }
+}
+
+runWhenDOMLoaded(updateInteractLink)
+document.addEventListener('turbolinks:load', updateInteractLink)
+</script>
+
+
+  <!-- Lunr search code - will only be executed on the /search page -->
+  <script src="/think-data/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script>var initQuery = function() {
+  // See if we have a search box
+  var searchInput = document.querySelector('input#lunr_search');
+  if (searchInput === null) {
+    return;
+  }
+
+  // Function to parse our lunr cache
+  var idx = lunr(function () {
+    this.field('title')
+    this.field('excerpt')
+    this.field('categories')
+    this.field('tags')
+    this.ref('id')
+
+    this.pipeline.remove(lunr.trimmer)
+
+    for (var item in store) {
+      this.add({
+        title: store[item].title,
+        excerpt: store[item].excerpt,
+        categories: store[item].categories,
+        tags: store[item].tags,
+        id: item
+      })
+    }
+  });
+
+  // Run search upon keyup
+  searchInput.addEventListener('keyup', function () {
+    var resultdiv = document.querySelector('#results');
+    var query = document.querySelector("input#lunr_search").value.toLowerCase();
+    var result =
+      idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, { boost: 100 })
+          if(query.lastIndexOf(" ") != query.length-1){
+            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+          }
+          if (term != ""){
+            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
+          }
+        })
+      });
+
+      // Empty the results div
+      while (resultdiv.firstChild) {
+        resultdiv.removeChild(resultdiv.firstChild);
+      }
+
+    resultdiv.insertAdjacentHTML('afterbegin', '<p class="results__found">'+result.length+' Result(s) found</p>');
+    for (var item in result) {
+      var ref = result[item].ref;
+      if(store[ref].teaser){
+        var searchitem =
+          '<div class="list__item">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
+              '<h2 class="archive__item-title" itemprop="headline">'+
+                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
+              '</h2>'+
+              '<div class="archive__item-teaser">'+
+                '<img src="'+store[ref].teaser+'" alt="">'+
+              '</div>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
+            '</article>'+
+          '</div>';
+      }
+      else{
+    	  var searchitem =
+          '<div class="list__item">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
+              '<h2 class="archive__item-title" itemprop="headline">'+
+                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
+              '</h2>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
+            '</article>'+
+          '</div>';
+      }
+      resultdiv.insertAdjacentHTML('beforeend', searchitem);
+    }
+  });
+};
+
+initFunction(initQuery);
+</script>
+</head>
+
+  <body>
+    <!-- .js-show-sidebar shows sidebar by default -->
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+      
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+  <a href="https://github.com/kailu3/think-data"><img src="/think-data/images/logo/jupyter.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <h2 class="c-sidebar__title">Think Data</h2>
+  <ul class="c-sidebar__chapters">
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/think-data/preface.html"
+        >
+          
+          Preface
+        </a>
+
+        
+      </li>
+
+      
+    
+      
+      
+        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/think-data/search.html">Search</a></li>
+        
+      
+      
+        <li class="c-sidebar__divider"></li>
+        
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/think-data/getting-started/installation.html"
+        >
+          
+          Getting started
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/getting-started/intro_jupyter.html"
+                >
+                  
+                  Introduction to Jupyter
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/getting-started/shortcuts.html"
+                >
+                  
+                  Useful Shortcuts
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/getting-started/extensions.html"
+                >
+                  
+                  Useful Extensions
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/think-data/basics/Preface.html"
+        >
+          
+          Notebook Testing
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/basics/IPython-Beyond-Normal-Python.html"
+                >
+                  
+                  IPython
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry c-sidebar__entry--active"
+                  href="/think-data/basics/Help-And-Documentation.html"
+                >
+                  
+                  Help
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="https://github.com/kailu3/think-data"
+        >
+          
+          GitHub repository
+        </a>
+
+        
+      </li>
+
+      
+    
+  </ul>
+  <p class="sidebar_footer">Powered by <a href="https://github.com/jupyter/jupyter-book">Jupyter Book</a></p>
+</nav>
+
+      
+      <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
+      <aside class="sidebar__right">
+          <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+          <nav class="onthispage">
+          </nav>
+      </aside>
+      
+      <main class="c-textbook__page" tabindex="-1">
+          <div class="o-wrapper">
+            <div class="c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            
+<div class="buttons">
+<a href="/think-data/content/basics/Help-And-Documentation.ipynb" download>
+<button id="interact-button-download" class="interact-button">Download</button>
+</a>
+
+<button id="interact-button-thebelab" class="interact-button">Thebelab</button>
+
+
+
+
+
+
+
+
+
+<a href="https://mybinder.org/v2/gh/kailu3/think-data/master?filepath=content%2Fbasics%2FHelp-And-Documentation.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/think-data/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
+
+
+</div>
+
+
+            <div class="c-textbook__content">
+              <!--BOOK_INFORMATION-->
+<p><img align="left" style="padding-right:10px;" src="figures/PDSH-cover-small.png" /></p>
+
+<p><em>This notebook contains an excerpt from the <a href="http://shop.oreilly.com/product/0636920034919.do">Python Data Science Handbook</a> by Jake VanderPlas; the content is available <a href="https://github.com/jakevdp/PythonDataScienceHandbook">on GitHub</a>.</em></p>
+
+<p><em>The text is released under the <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/us/legalcode">CC-BY-NC-ND license</a>, and code is released under the <a href="https://opensource.org/licenses/MIT">MIT license</a>. If you find this content useful, please consider supporting the work by <a href="http://shop.oreilly.com/product/0636920034919.do">buying the book</a>!</em></p>
+
+<!--NAVIGATION-->
+<p>&lt; <a href="01.00-IPython-Beyond-Normal-Python.ipynb">IPython: Beyond Normal Python</a> | <a href="Index.ipynb">Contents</a> | <a href="01.02-Shell-Keyboard-Shortcuts.ipynb">Keyboard Shortcuts in the IPython Shell</a> &gt;</p>
+
+<p><a href="https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/01.01-Help-And-Documentation.ipynb"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory" /></a></p>
+
+<h1 id="help-and-documentation-in-ipython">Help and Documentation in IPython</h1>
+
+<p>If you read no other section in this chapter, read this one: I find the tools discussed here to be the most transformative contributions of IPython to my daily workflow.</p>
+
+<p>When a technologically-minded person is asked to help a friend, family member, or colleague with a computer problem, most of the time it’s less a matter of knowing the answer as much as knowing how to quickly find an unknown answer.
+In data science it’s the same: searchable web resources such as online documentation, mailing-list threads, and StackOverflow answers contain a wealth of information, even (especially?) if it is a topic you’ve found yourself searching before.
+Being an effective practitioner of data science is less about memorizing the tool or command you should use for every possible situation, and more about learning to effectively find the information you don’t know, whether through a web search engine or another means.</p>
+
+<p>One of the most useful functions of IPython/Jupyter is to shorten the gap between the user and the type of documentation and search that will help them do their work effectively.
+While web searches still play a role in answering complicated questions, an amazing amount of information can be found through IPython alone.
+Some examples of the questions IPython can help answer in a few keystrokes:</p>
+
+<ul>
+  <li>How do I call this function? What arguments and options does it have?</li>
+  <li>What does the source code of this Python object look like?</li>
+  <li>What is in this package I imported? What attributes or methods does this object have?</li>
+</ul>
+
+<p>Here we’ll discuss IPython’s tools to quickly access this information, namely the <code class="highlighter-rouge">?</code> character to explore documentation, the <code class="highlighter-rouge">??</code> characters to explore source code, and the Tab key for auto-completion.</p>
+
+<h2 id="accessing-documentation-with-">Accessing Documentation with <code class="highlighter-rouge">?</code></h2>
+
+<p>The Python language and its data science ecosystem is built with the user in mind, and one big part of that is access to documentation.
+Every Python object contains the reference to a string, known as a <em>doc string</em>, which in most cases will contain a concise summary of the object and how to use it.
+Python has a built-in <code class="highlighter-rouge">help()</code> function that can access this information and prints the results.
+For example, to see the documentation of the built-in <code class="highlighter-rouge">len</code> function, you can do the following:</p>
+
+<pre><code class="language-ipython">In [1]: help(len)
+Help on built-in function len in module builtins:
+
+len(...)
+    len(object) -&gt; integer
+    
+    Return the number of items of a sequence or mapping.
+</code></pre>
+
+<p>Depending on your interpreter, this information may be displayed as inline text, or in some separate pop-up window.</p>
+
+<p>Because finding help on an object is so common and useful, IPython introduces the <code class="highlighter-rouge">?</code> character as a shorthand for accessing this documentation and other relevant information:</p>
+
+<pre><code class="language-ipython">In [2]: len?
+Type:        builtin_function_or_method
+String form: &lt;built-in function len&gt;
+Namespace:   Python builtin
+Docstring:
+len(object) -&gt; integer
+
+Return the number of items of a sequence or mapping.
+</code></pre>
+
+<p>This notation works for just about anything, including object methods:</p>
+
+<pre><code class="language-ipython">In [3]: L = [1, 2, 3]
+In [4]: L.insert?
+Type:        builtin_function_or_method
+String form: &lt;built-in method insert of list object at 0x1024b8ea8&gt;
+Docstring:   L.insert(index, object) -- insert object before index
+</code></pre>
+
+<p>or even objects themselves, with the documentation from their type:</p>
+
+<pre><code class="language-ipython">In [5]: L?
+Type:        list
+String form: [1, 2, 3]
+Length:      3
+Docstring:
+list() -&gt; new empty list
+list(iterable) -&gt; new list initialized from iterable's items
+</code></pre>
+
+<p>Importantly, this will even work for functions or other objects you create yourself!
+Here we’ll define a small function with a docstring:</p>
+
+<pre><code class="language-ipython">In [6]: def square(a):
+  ....:     """Return the square of a."""
+  ....:     return a ** 2
+  ....:
+</code></pre>
+
+<p>Note that to create a docstring for our function, we simply placed a string literal in the first line.
+Because doc strings are usually multiple lines, by convention we used Python’s triple-quote notation for multi-line strings.</p>
+
+<p>Now we’ll use the <code class="highlighter-rouge">?</code> mark to find this doc string:</p>
+
+<pre><code class="language-ipython">In [7]: square?
+Type:        function
+String form: &lt;function square at 0x103713cb0&gt;
+Definition:  square(a)
+Docstring:   Return the square of a.
+</code></pre>
+
+<p>This quick access to documentation via docstrings is one reason you should get in the habit of always adding such inline documentation to the code you write!</p>
+
+<h2 id="accessing-source-code-with-">Accessing Source Code with <code class="highlighter-rouge">??</code></h2>
+<p>Because the Python language is so easily readable, another level of insight can usually be gained by reading the source code of the object you’re curious about.
+IPython provides a shortcut to the source code with the double question mark (<code class="highlighter-rouge">??</code>):</p>
+
+<pre><code class="language-ipython">In [8]: square??
+Type:        function
+String form: &lt;function square at 0x103713cb0&gt;
+Definition:  square(a)
+Source:
+def square(a):
+    "Return the square of a"
+    return a ** 2
+</code></pre>
+
+<p>For simple functions like this, the double question-mark can give quick insight into the under-the-hood details.</p>
+
+<p>If you play with this much, you’ll notice that sometimes the <code class="highlighter-rouge">??</code> suffix doesn’t display any source code: this is generally because the object in question is not implemented in Python, but in C or some other compiled extension language.
+If this is the case, the <code class="highlighter-rouge">??</code> suffix gives the same output as the <code class="highlighter-rouge">?</code> suffix.
+You’ll find this particularly with many of Python’s built-in objects and types, for example <code class="highlighter-rouge">len</code> from above:</p>
+
+<pre><code class="language-ipython">In [9]: len??
+Type:        builtin_function_or_method
+String form: &lt;built-in function len&gt;
+Namespace:   Python builtin
+Docstring:
+len(object) -&gt; integer
+
+Return the number of items of a sequence or mapping.
+</code></pre>
+
+<p>Using <code class="highlighter-rouge">?</code> and/or <code class="highlighter-rouge">??</code> gives a powerful and quick interface for finding information about what any Python function or module does.</p>
+
+<h2 id="exploring-modules-with-tab-completion">Exploring Modules with Tab-Completion</h2>
+
+<p>IPython’s other useful interface is the use of the tab key for auto-completion and exploration of the contents of objects, modules, and name-spaces.
+In the examples that follow, we’ll use <code class="highlighter-rouge">&lt;TAB&gt;</code> to indicate when the Tab key should be pressed.</p>
+
+<h3 id="tab-completion-of-object-contents">Tab-completion of object contents</h3>
+
+<p>Every Python object has various attributes and methods associated with it.
+Like with the <code class="highlighter-rouge">help</code> function discussed before, Python has a built-in <code class="highlighter-rouge">dir</code> function that returns a list of these, but the tab-completion interface is much easier to use in practice.
+To see a list of all available attributes of an object, you can type the name of the object followed by a period (“<code class="highlighter-rouge">.</code>”) character and the Tab key:</p>
+
+<pre><code class="language-ipython">In [10]: L.&lt;TAB&gt;
+L.append   L.copy     L.extend   L.insert   L.remove   L.sort     
+L.clear    L.count    L.index    L.pop      L.reverse  
+</code></pre>
+
+<p>To narrow-down the list, you can type the first character or several characters of the name, and the Tab key will find the matching attributes and methods:</p>
+
+<pre><code class="language-ipython">In [10]: L.c&lt;TAB&gt;
+L.clear  L.copy   L.count  
+
+In [10]: L.co&lt;TAB&gt;
+L.copy   L.count 
+</code></pre>
+
+<p>If there is only a single option, pressing the Tab key will complete the line for you.
+For example, the following will instantly be replaced with <code class="highlighter-rouge">L.count</code>:</p>
+
+<pre><code class="language-ipython">In [10]: L.cou&lt;TAB&gt;
+
+</code></pre>
+
+<p>Though Python has no strictly-enforced distinction between public/external attributes and private/internal attributes, by convention a preceding underscore is used to denote such methods.
+For clarity, these private methods and special methods are omitted from the list by default, but it’s possible to list them by explicitly typing the underscore:</p>
+
+<pre><code class="language-ipython">In [10]: L._&lt;TAB&gt;
+L.__add__           L.__gt__            L.__reduce__
+L.__class__         L.__hash__          L.__reduce_ex__
+</code></pre>
+
+<p>For brevity, we’ve only shown the first couple lines of the output.
+Most of these are Python’s special double-underscore methods (often nicknamed “dunder” methods).</p>
+
+<h3 id="tab-completion-when-importing">Tab completion when importing</h3>
+
+<p>Tab completion is also useful when importing objects from packages.
+Here we’ll use it to find all possible imports in the <code class="highlighter-rouge">itertools</code> package that start with <code class="highlighter-rouge">co</code>:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In [10]: from itertools import co&lt;TAB&gt;
+combinations                   compress
+combinations_with_replacement  count
+</code></pre></div></div>
+<p>Similarly, you can use tab-completion to see which imports are available on your system (this will change depending on which third-party scripts and modules are visible to your Python session):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In [10]: import &lt;TAB&gt;
+Display all 399 possibilities? (y or n)
+Crypto              dis                 py_compile
+Cython              distutils           pyclbr
+...                 ...                 ...
+difflib             pwd                 zmq
+
+In [10]: import h&lt;TAB&gt;
+hashlib             hmac                http         
+heapq               html                husl         
+</code></pre></div></div>
+<p>(Note that for brevity, I did not print here all 399 importable packages and modules on my system.)</p>
+
+<h3 id="beyond-tab-completion-wildcard-matching">Beyond tab completion: wildcard matching</h3>
+
+<p>Tab completion is useful if you know the first few characters of the object or attribute you’re looking for, but is little help if you’d like to match characters at the middle or end of the word.
+For this use-case, IPython provides a means of wildcard matching for names using the <code class="highlighter-rouge">*</code> character.</p>
+
+<p>For example, we can use this to list every object in the namespace that ends with <code class="highlighter-rouge">Warning</code>:</p>
+
+<pre><code class="language-ipython">In [10]: *Warning?
+BytesWarning                  RuntimeWarning
+DeprecationWarning            SyntaxWarning
+FutureWarning                 UnicodeWarning
+ImportWarning                 UserWarning
+PendingDeprecationWarning     Warning
+ResourceWarning
+</code></pre>
+
+<p>Notice that the <code class="highlighter-rouge">*</code> character matches any string, including the empty string.</p>
+
+<p>Similarly, suppose we are looking for a string method that contains the word <code class="highlighter-rouge">find</code> somewhere in its name.
+We can search for it this way:</p>
+
+<pre><code class="language-ipython">In [10]: str.*find*?
+str.find
+str.rfind
+</code></pre>
+
+<p>I find this type of flexible wildcard search can be very useful for finding a particular command when getting to know a new package or reacquainting myself with a familiar one.</p>
+
+<!--NAVIGATION-->
+<p>&lt; <a href="01.00-IPython-Beyond-Normal-Python.ipynb">IPython: Beyond Normal Python</a> | <a href="Index.ipynb">Contents</a> | <a href="01.02-Shell-Keyboard-Shortcuts.ipynb">Keyboard Shortcuts in the IPython Shell</a> &gt;</p>
+
+<p><a href="https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/01.01-Help-And-Documentation.ipynb"><img align="left" src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" title="Open and Execute in Google Colaboratory" /></a></p>
+
+
+              <nav class="c-page__nav">
+  
+    
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/think-data/basics/IPython-Beyond-Normal-Python.html">
+      〈 <span class="u-margin-right-tiny"></span> IPython
+    </a>
+  
+
+  
+    
+    <a id="js-page__nav__next" class="c-page__nav__next" href="https://github.com/kailu3/think-data">
+      GitHub repository <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
