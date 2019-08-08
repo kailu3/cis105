@@ -29,9 +29,9 @@
   "headline":
     "Search the site",
   "datePublished":
-    "2019-08-08T13:57:26-05:00",
+    "2019-08-08T14:13:12-05:00",
   "dateModified":
-    "2019-08-08T13:57:26-05:00",
+    "2019-08-08T14:13:12-05:00",
   "description":
     "This is a book for learning data analysis with Python.",
   "author": {
@@ -842,6 +842,27 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
+          href="/think-data/features/notebooks.html"
+        >
+          
+          Notebook
+        </a>
+
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
           href="https://github.com/kailu3/think-data"
         >
           
@@ -1055,7 +1076,7 @@ initFunction(initQuery);
         "title": "Notebook Testing",
         
         "excerpt":
-            "%matplotlib inline import numpy as np import pandas as pd import pandas_profiling import matplotlib.pyplot as plt import seaborn as sns import re cancun = pd.read_csv('../data/interim/cancun_unclean.csv') # Initial report for exploratory # profile = cancun.profile_report(title='Pandas Profiling Report') # profile.to_file(output_file=\"cancun_unclean.html\") Inital Exploration cancun.shape (6673, 37) cancun.isnull().sum().sort_values(ascending=False).head(7) localized_neighborhood 6673 star_rating 3044 response_time 1217 listing_name 7 bathrooms 2 bedrooms 2 currency 0 dtype: int64 Dealing with Missing Values Spider scraped 37 fields for around 6673 listings in Cancún but not all fields are important or have no missing values. That said, there is some manual selection to be done. Since there are only 37...",
+            "2+2 4 # profile = cancun_variables.profile_report(title='Pandas Profiling Report') # profile.to_file(output_file=\"cancun_variables.html\") # IDEA: We currently have the issue where we cannot benchmark our model. Perhaps to prove that it is better than random selection, # scrape the 1st page of each price_range and see how much of our TOP 50 listings overlap with the 1st page Airbnb Listing Rankings, # compare to a random selection of listings, bootstrap the proportion/median/difference and see whether we have a significance difference. # Null Hypothesis: Our model will have the same overlap proportion with Airbnb Ranking (1st page) as a random selection # Alternative Hypothesis:...",
         "categories": [],
         "tags": [],
         "url": "http://0.0.0.0:4000/think-data/basics/test_notebook.html",
@@ -1108,7 +1129,7 @@ initFunction(initQuery);
         "tags": [],
         "url": "http://0.0.0.0:4000/think-data/features/markdown.html",
         "teaser":null},{
-        "title": "Jupyter notebooks",
+        "title": "Notebook",
         
         "excerpt":
             "Content with notebooks You can also create content with Jupyter Notebooks. The content for the current page is contained in a Jupyter Notebook in the notebooks/ folder of the repository. This means that we can include code blocks and their outputs, and export them to Jekyll markdown. You can find the original notebook for this page at this address Markdown + notebooks As it is markdown, you can embed images, HTML, etc into your posts! You an also $add_{math}$ and or But make sure you \\$Escape \\$your \\$dollar signs \\$you want to keep! Code blocks and image outputs Textbooks with...",

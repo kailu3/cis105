@@ -41,6 +41,17 @@
 - title: Notebook Testing
   url: /basics/test_notebook
   not_numbered: true
+  
+
+- title: Notebook
+  url: /features/notebooks
+  not_numbered: true
+  
+- title: Test2
+  url: /basics/test2
+  not_numbered: true
+  
+
 
 # - title: Features and customization
 #   url: /features/features

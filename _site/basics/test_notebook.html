@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Notebook Testing</title>
-  <meta name="description" content="      ```python%matplotlib inlineimport numpy as npimport pandas as pdimport pandas_profilingimport matplotlib.pyplot as pltimport seaborn as snsimport re  ">
+  <meta name="description" content="      ```python2+2  ">
 
   <link rel="canonical" href="http://0.0.0.0:4000/think-data/basics/test_notebook.html">
   <link rel="alternate" type="application/rss+xml" title="Think Data" href="http://0.0.0.0:4000/think-data/feed.xml">
@@ -16,7 +16,7 @@
   <meta property="og:url"         content="http://0.0.0.0:4000/think-data/basics/test_notebook.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Notebook Testing" />
-<meta property="og:description" content="      ```python%matplotlib inlineimport numpy as npimport pandas as pdimport pandas_profilingimport matplotlib.pyplot as pltimport seaborn as snsimport re  " />
+<meta property="og:description" content="      ```python2+2  " />
 <meta property="og:image"       content="" />
 
 
@@ -29,11 +29,11 @@
   "headline":
     "Notebook Testing",
   "datePublished":
-    "2019-08-08T13:57:26-05:00",
+    "2019-08-08T14:13:12-05:00",
   "dateModified":
-    "2019-08-08T13:57:26-05:00",
+    "2019-08-08T14:13:12-05:00",
   "description":
-    "      ```python%matplotlib inlineimport numpy as npimport pandas as pdimport pandas_profilingimport matplotlib.pyplot as pltimport seaborn as snsimport re  ",
+    "      ```python2+2  ",
   "author": {
     "@type": "Person",
     "name": "Kai Lu"
@@ -842,6 +842,27 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
+          href="/think-data/features/notebooks.html"
+        >
+          
+          Notebook
+        </a>
+
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
           href="https://github.com/kailu3/think-data"
         >
           
@@ -905,44 +926,7 @@ initFunction(initQuery);
             <div class="c-textbook__content">
               <div class="cell code_cell">
   <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
-<span class="kn">import</span> <span class="nn">pandas_profiling</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'../data/interim/cancun_unclean.csv'</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Initial report for exploratory</span>
-<span class="c"># profile = cancun.profile_report(title='Pandas Profiling Report')</span>
-<span class="c"># profile.to_file(output_file="cancun_unclean.html")</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<h1 id="inital-exploration">Inital Exploration</h1>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun</span><span class="o">.</span><span class="n">shape</span>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">2</span><span class="o">+</span><span class="mi">2</span>
 
 </code></pre></div>    </div>
   </div>
@@ -950,666 +934,11 @@ initFunction(initQuery);
   <div class="output_wrapper">
     <div class="output_subarea">
 
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(6673, 37)
+      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>4
 </code></pre></div>      </div>
 
     </div>
   </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>localized_neighborhood    6673
-star_rating               3044
-response_time             1217
-listing_name                 7
-bathrooms                    2
-bedrooms                     2
-currency                     0
-dtype: int64
-</code></pre></div>      </div>
-
-    </div>
-  </div>
-</div>
-
-<h2 id="dealing-with-missing-values">Dealing with Missing Values</h2>
-
-<p>Spider scraped 37 fields for around 6673 listings in Cancún but not all fields are important or have no missing values. That said, there is some manual selection to be done. Since there are only 37 fields, this is doable. If there were more (e.g. 100+ columns), manual selection would not be possible and we would have to adopt some rule system to remove low variance/high correlation/high NA columns.</p>
-
-<p><code class="highlighter-rouge">localized_neighborhood</code>, <code class="highlighter-rouge">star_rating</code>, and <code class="highlighter-rouge">response time</code> have a large number of NaN/NA values. <code class="highlighter-rouge">localized neighborhood</code> is instantly dropped as it’s missing all its values; <code class="highlighter-rouge">star_rating</code> is substitutable with <code class="highlighter-rouge">avg_rating</code> and <code class="highlighter-rouge">response time</code> is not super crucial to our analysis and will also be dropped. There are 2 NAs for both <code class="highlighter-rouge">bedrooms</code> and <code class="highlighter-rouge">bathrooms</code> but we can simply drop those rows since there aren’t a lot of them.</p>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">COLUMNS_TO_DROP</span> <span class="o">=</span> <span class="p">[</span><span class="s">'is_business_travel_ready'</span><span class="p">,</span> <span class="c"># Constant Column</span>
-                   <span class="s">'localized_neighborhood'</span><span class="p">,</span> <span class="c"># Not Important field</span>
-                   <span class="s">'amt_w_service'</span><span class="p">,</span> <span class="c"># Duplicate with price</span>
-                   <span class="s">'rate_type'</span><span class="p">,</span> <span class="c"># Constant Column</span>
-                   <span class="s">'star_rating'</span><span class="p">,</span> <span class="c"># 45% missing</span>
-                   <span class="s">'listing_name'</span><span class="p">,</span> <span class="c"># Not Important field</span>
-                   <span class="s">'response_time'</span><span class="p">,</span> <span class="c"># 18% missing + Not descriptive enough</span>
-                   <span class="s">'localized_city'</span><span class="p">,</span>
-                   <span class="s">'host_id'</span><span class="p">]</span> <span class="c"># Same with localized_neighborhood</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<p>We also need to separate the <code class="highlighter-rouge">VARIABLES</code> from the <code class="highlighter-rouge">FILTERS</code>. We want to create two DataFrames that are joinable by key.</p>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">FILTERS_WITH_URL</span> <span class="o">=</span> <span class="p">[</span><span class="s">'bathrooms'</span><span class="p">,</span> <span class="s">'bedrooms'</span><span class="p">,</span> <span class="s">'num_beds'</span><span class="p">,</span> <span class="s">'can_instant_book'</span><span class="p">,</span>
-                    <span class="s">'is_fully_refundable'</span><span class="p">,</span> <span class="s">'is_superhost'</span><span class="p">,</span> <span class="s">'is_new_listing'</span><span class="p">,</span>
-                    <span class="s">'room_type_category'</span><span class="p">,</span> <span class="s">'person_capacity'</span><span class="p">,</span> <span class="s">'lat'</span><span class="p">,</span> <span class="s">'lng'</span><span class="p">,</span> 
-                     <span class="s">'url'</span><span class="p">]</span>
-
-<span class="n">FILTERS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'bathrooms'</span><span class="p">,</span> <span class="s">'bedrooms'</span><span class="p">,</span> <span class="s">'num_beds'</span><span class="p">,</span> <span class="s">'can_instant_book'</span><span class="p">,</span>
-           <span class="s">'is_fully_refundable'</span><span class="p">,</span> <span class="s">'is_superhost'</span><span class="p">,</span> <span class="s">'is_new_listing'</span><span class="p">,</span>
-           <span class="s">'room_type_category'</span><span class="p">,</span> <span class="s">'person_capacity'</span><span class="p">,</span> <span class="s">'lat'</span><span class="p">,</span> <span class="s">'lng'</span><span class="p">]</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<h2 id="filters">Filters</h2>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_filters</span> <span class="o">=</span> <span class="p">(</span><span class="n">cancun</span>
-                  <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">COLUMNS_TO_DROP</span><span class="p">)</span>
-                  <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s">'any'</span><span class="p">)</span> 
-                  <span class="o">.</span><span class="n">loc</span><span class="p">[:,</span><span class="n">FILTERS_WITH_URL</span><span class="p">]</span> 
-                 <span class="p">)</span>                                            
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_filters</span><span class="o">.</span><span class="n">shape</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(6669, 12)
-</code></pre></div>      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_filters</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output output_html">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>bathrooms</th>
-      <th>bedrooms</th>
-      <th>num_beds</th>
-      <th>can_instant_book</th>
-      <th>is_fully_refundable</th>
-      <th>is_superhost</th>
-      <th>is_new_listing</th>
-      <th>room_type_category</th>
-      <th>person_capacity</th>
-      <th>lat</th>
-      <th>lng</th>
-      <th>url</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.13566</td>
-      <td>-86.76741</td>
-      <td>https://www.airbnb.com/rooms/20776319</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.14571</td>
-      <td>-86.84190</td>
-      <td>https://www.airbnb.com/rooms/16492050</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1.5</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.13119</td>
-      <td>-86.76394</td>
-      <td>https://www.airbnb.com/rooms/14266451</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>2</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>entire_home</td>
-      <td>5</td>
-      <td>21.15737</td>
-      <td>-86.83975</td>
-      <td>https://www.airbnb.com/rooms/17625889</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>entire_home</td>
-      <td>3</td>
-      <td>21.15327</td>
-      <td>-86.85548</td>
-      <td>https://www.airbnb.com/rooms/18543147</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_filters</span><span class="o">.</span><span class="n">columns</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index(['bathrooms', 'bedrooms', 'num_beds', 'can_instant_book',
-       'is_fully_refundable', 'is_superhost', 'is_new_listing',
-       'room_type_category', 'person_capacity', 'lat', 'lng', 'url'],
-      dtype='object')
-</code></pre></div>      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">exclude_columns</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">columns</span><span class="p">):</span>
-    <span class="s">"""
-    Exludes specified columns [List] from the DataFrame
-    """</span>
-    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">columns</span><span class="p">)]]</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<h2 id="variables">Variables</h2>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_variables</span> <span class="o">=</span> <span class="p">(</span><span class="n">cancun</span>
-                    <span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">COLUMNS_TO_DROP</span><span class="p">)</span>
-                    <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">how</span><span class="o">=</span><span class="s">'any'</span><span class="p">)</span> 
-                    <span class="o">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">exclude_columns</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">FILTERS</span><span class="p">)</span>
-                   <span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_variables</span><span class="o">.</span><span class="n">shape</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(6669, 17)
-</code></pre></div>      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_variables</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output output_html">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>accuracy</th>
-      <th>avg_rating</th>
-      <th>checkin</th>
-      <th>cleanliness</th>
-      <th>communication</th>
-      <th>currency</th>
-      <th>guest_satisfication</th>
-      <th>host_reviews</th>
-      <th>location</th>
-      <th>monthly_price_factor</th>
-      <th>picture_count</th>
-      <th>price</th>
-      <th>response_rate</th>
-      <th>reviews_count</th>
-      <th>url</th>
-      <th>value</th>
-      <th>weekly_price_factor</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>10</td>
-      <td>4.74</td>
-      <td>10</td>
-      <td>9</td>
-      <td>10</td>
-      <td>CAD</td>
-      <td>95</td>
-      <td>311</td>
-      <td>10</td>
-      <td>0.88</td>
-      <td>19</td>
-      <td>22</td>
-      <td>100</td>
-      <td>50</td>
-      <td>https://www.airbnb.com/rooms/20776319</td>
-      <td>10</td>
-      <td>0.88</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>10</td>
-      <td>4.93</td>
-      <td>10</td>
-      <td>10</td>
-      <td>10</td>
-      <td>CAD</td>
-      <td>99</td>
-      <td>147</td>
-      <td>10</td>
-      <td>0.85</td>
-      <td>22</td>
-      <td>28</td>
-      <td>100</td>
-      <td>108</td>
-      <td>https://www.airbnb.com/rooms/16492050</td>
-      <td>10</td>
-      <td>0.90</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>10</td>
-      <td>4.72</td>
-      <td>10</td>
-      <td>9</td>
-      <td>10</td>
-      <td>CAD</td>
-      <td>94</td>
-      <td>1376</td>
-      <td>9</td>
-      <td>1.00</td>
-      <td>14</td>
-      <td>30</td>
-      <td>100</td>
-      <td>243</td>
-      <td>https://www.airbnb.com/rooms/14266451</td>
-      <td>9</td>
-      <td>1.00</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>10</td>
-      <td>4.75</td>
-      <td>10</td>
-      <td>9</td>
-      <td>10</td>
-      <td>CAD</td>
-      <td>95</td>
-      <td>179</td>
-      <td>10</td>
-      <td>0.79</td>
-      <td>27</td>
-      <td>24</td>
-      <td>97</td>
-      <td>177</td>
-      <td>https://www.airbnb.com/rooms/17625889</td>
-      <td>10</td>
-      <td>0.93</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>10</td>
-      <td>4.65</td>
-      <td>10</td>
-      <td>9</td>
-      <td>10</td>
-      <td>CAD</td>
-      <td>93</td>
-      <td>631</td>
-      <td>9</td>
-      <td>0.80</td>
-      <td>18</td>
-      <td>21</td>
-      <td>100</td>
-      <td>194</td>
-      <td>https://www.airbnb.com/rooms/18543147</td>
-      <td>9</td>
-      <td>0.95</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_variables</span><span class="o">.</span><span class="n">columns</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output_data_text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Index(['accuracy', 'avg_rating', 'checkin', 'cleanliness', 'communication',
-       'currency', 'guest_satisfication', 'host_reviews', 'location',
-       'monthly_price_factor', 'picture_count', 'price', 'response_rate',
-       'reviews_count', 'url', 'value', 'weekly_price_factor'],
-      dtype='object')
-</code></pre></div>      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_id</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-    <span class="s">'''
-    Helper funciton that extracts the listing id
-    '''</span>
-    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">'/rooms/(.*)'</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create new column listing_key</span>
-<span class="n">cancun_variables</span><span class="p">[</span><span class="s">'listing_key'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cancun_variables</span><span class="p">[</span><span class="s">'url'</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">extract_id</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Do the same for cancun_filters</span>
-<span class="n">cancun_filters</span><span class="p">[</span><span class="s">'listing_key'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cancun_filters</span><span class="p">[</span><span class="s">'url'</span><span class="p">]</span><span class="o">.</span><span class="nb">apply</span><span class="p">(</span><span class="n">extract_id</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_filters</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-
-</code></pre></div>    </div>
-  </div>
-
-  <div class="output_wrapper">
-    <div class="output_subarea">
-
-      <div class="output output_html">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>bathrooms</th>
-      <th>bedrooms</th>
-      <th>num_beds</th>
-      <th>can_instant_book</th>
-      <th>is_fully_refundable</th>
-      <th>is_superhost</th>
-      <th>is_new_listing</th>
-      <th>room_type_category</th>
-      <th>person_capacity</th>
-      <th>lat</th>
-      <th>lng</th>
-      <th>url</th>
-      <th>listing_key</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.13566</td>
-      <td>-86.76741</td>
-      <td>https://www.airbnb.com/rooms/20776319</td>
-      <td>20776319</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.14571</td>
-      <td>-86.84190</td>
-      <td>https://www.airbnb.com/rooms/16492050</td>
-      <td>16492050</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1.5</td>
-      <td>1.0</td>
-      <td>1</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.13119</td>
-      <td>-86.76394</td>
-      <td>https://www.airbnb.com/rooms/14266451</td>
-      <td>14266451</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>2</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>entire_home</td>
-      <td>5</td>
-      <td>21.15737</td>
-      <td>-86.83975</td>
-      <td>https://www.airbnb.com/rooms/17625889</td>
-      <td>17625889</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>entire_home</td>
-      <td>3</td>
-      <td>21.15327</td>
-      <td>-86.85548</td>
-      <td>https://www.airbnb.com/rooms/18543147</td>
-      <td>18543147</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Export variables and filters</span>
-
-</code></pre></div>    </div>
-  </div>
-
-</div>
-
-<div class="cell code_cell">
-  <div class="input_area">
-    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cancun_variables</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">'cancun_variables.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-<span class="n">cancun_filters</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">'cancun_filters.csv'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-
-</code></pre></div>    </div>
-  </div>
-
 </div>
 
 <div class="cell code_cell">
@@ -1659,8 +988,8 @@ dtype: int64
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="https://github.com/kailu3/think-data">
-      GitHub repository <span class="u-margin-right-tiny"></span> 〉
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/think-data/features/notebooks.html">
+      Notebook <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>

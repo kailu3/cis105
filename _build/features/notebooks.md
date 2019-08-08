@@ -2,13 +2,13 @@
 interact_link: content/features/notebooks.ipynb
 kernel_name: python3
 has_widgets: false
-title: 'Jupyter notebooks'
+title: 'Notebook'
 prev_page:
-  url: /features/markdown.html
-  title: 'Markdown files'
+  url: /basics/test_notebook.html
+  title: 'Notebook Testing'
 next_page:
-  url: /features/hiding.html
-  title: 'Hiding code blocks or entire cells'
+  url: https://github.com/kailu3/think-data
+  title: 'GitHub repository'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
