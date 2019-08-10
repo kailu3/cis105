@@ -26,58 +26,48 @@
 - divider: true
 
 - title: Getting started
-  url: /getting-started/installation
+  url: /0-getting-started/installation
   not_numbered: true
   expand_sections: true
   sections:
   - title: Introduction to Jupyter
-    url: /getting-started/intro_jupyter
+    url: /0-getting-started/intro_jupyter
   - title: Useful Shortcuts
-    url: /getting-started/shortcuts
+    url: /0-getting-started/shortcuts
   - title: Useful Extensions
-    url: /getting-started/extensions
+    url: /0-getting-started/extensions
 
 
-- title: Notebook Testing
-  url: /basics/kl-cancun-initial-exploration
+- title: Introduction to Programming
+  url: /1-intro-programming/hello-world
   not_numbered: true
   expand_sections: true
   sections:
-  - title: Data Cleaning
-    url: /basics/kl-cancun-data-cleaning
-  - title: Feature Importance
-    url: /basics/kl-cancun-feature-importance
+  - title: Basic Math Expressions
+    url: /1-intro-programming/math
+  - title: Python Variables 
+    url: /1-intro-programming/variables
+  - title: Call Expressions
+    url: /1-intro-programming/call-expressions
   
-  
+- title: Python Data Types
+  url: /2-python-types/intro-types
+  not_numbered: true
+  expand_sections: true
+  sections:
+  - title: Numbers
+    url: /2-python-types/numbers
+  - title: Strings
+    url: /2-python-types/strings
+  - title: Booleans
+    url: /2-python-types/booleans
+  - title: Tuples, Lists, and Dictionaries
+    url: /2-python-types/tuples_lists_dicts
+  - title: Type Casting
+    url: /2-python-types/type_casting
+   
 
-
-# - title: Features and customization
-#   url: /features/features
-#   not_numbered: true
-#   expand_sections: true
-#   sections:
-#   - title: Markdown files
-#     url: /features/markdown
-#     not_numbered: true
-#   - title: Jupyter notebooks
-#     url: /features/notebooks
-#     not_numbered: true
-#   - title: Hiding code blocks or entire cells
-#     url: /features/hiding
-#     not_numbered: true
-#   - title: Connecting content with JupyterHub and Binder
-#     url: /features/interact
-#     not_numbered: true
-#   - title: Adding interactivity to your book pages
-#     url: /features/interactive_cells
-#     not_numbered: true
-#   - title: Searching your book
-#     url: /features/search
-#     not_numbered: true
-#   - title: Feature Limits
-#     url: /features/limits
-#     not_numbered: true
-
+# Intro to NumPy next 
 
 - title: GitHub repository
   url: https://github.com/kailu3/think-data

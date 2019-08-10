@@ -29,9 +29,9 @@
   "headline":
     "Search the site",
   "datePublished":
-    "2019-08-08T14:40:03-05:00",
+    "2019-08-10T10:27:57-05:00",
   "dateModified":
-    "2019-08-08T14:40:03-05:00",
+    "2019-08-10T10:27:57-05:00",
   "description":
     "This is a book for learning data analysis with Python.",
   "author": {
@@ -143,134 +143,6 @@ initFunction(function () {
 
   <!-- Load Thebelab for interactive widgets -->
   <!-- Include Thebelab for interactive code if it's enabled -->
-
-
-<!-- Display Thebelab button in each code cell -->
-<script>
-/**
- * Set up thebelab button for code blocks
- */
-
-const thebelabCellButton = id =>
-  `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/think-data/assets/images/edit-button.svg" alt="Start interactive mode">
-  </a>`
-
-
-const addThebelabButtonToCodeCells =  () => {
-
-  const codeCells = document.querySelectorAll('div.input_area > div.highlighter-rouge:not(.output) pre')
-  codeCells.forEach((codeCell, index) => {
-    const id = codeCellId(index)
-    codeCell.setAttribute('id', id)
-    if (document.getElementById("thebelab-cell-button-" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', thebelabCellButton(id));
-    }
-  })
-}
-
-initFunction(addThebelabButtonToCodeCells);
-</script>
-
-
-
-<script type="text/x-thebe-config">
-    {
-      requestKernel: true,
-      binderOptions: {
-        repo: 'kailu3/think-data',
-        ref: 'master',
-      },
-      codeMirrorConfig: {
-        theme: "abcdef"
-      },
-      kernelOptions: {
-        name: 'python3',
-      }
-    }
-</script>
-<script src="https://unpkg.com/thebelab@0.4.0/lib/index.js"></script>
-<script>
-    /**
-     * Add attributes to Thebelab blocks
-     */
-
-    const initThebelab = () => {
-        const addThebelabToCodeCells = () => {
-            console.log("Adding thebelab to code cells...");
-            // If Thebelab hasn't loaded, wait a bit and try again. This
-            // happens because we load ClipboardJS asynchronously.
-            if (window.thebelab === undefined) {
-                setTimeout(addThebelabToCodeCells, 250)
-            return
-            }
-
-            // If we already detect a Thebelab cell, don't re-run
-            if (document.querySelectorAll('div.thebelab-cell').length > 0) {
-                return;
-            }
-
-            // Find all code cells, replace with Thebelab interactive code cells
-            const codeCells = document.querySelectorAll('.input_area pre')
-            codeCells.forEach((codeCell, index) => {
-                const id = codeCellId(index)
-                codeCell.setAttribute('data-executable', 'true')
-
-                // Figure out the language it uses and add this too
-                var parentDiv = codeCell.parentElement.parentElement;
-                var arrayLength = parentDiv.classList.length;
-                for (var ii = 0; ii < arrayLength; ii++) {
-                    var parts = parentDiv.classList[ii].split('language-');
-                    if (parts.length === 2) {
-                        // If found, assign dataLanguage and break the loop
-                        var dataLanguage = parts[1];
-                        break;
-                    }
-                }
-                codeCell.setAttribute('data-language', dataLanguage)
-
-                // If the code cell is hidden, show it
-                var inputCheckbox = document.querySelector(`input#hidebtn${codeCell.id}`);
-                if (inputCheckbox !== null) {
-                    setCodeCellVisibility(inputCheckbox, 'visible');
-                }
-            });
-
-            // Remove the event listener from the page so keyboard press doesn't
-            // Change page
-            document.removeEventListener('keydown', initPageNav)
-            keyboardListener = false;
-
-            // Init thebelab
-            thebelab.bootstrap();
-
-            // Remove copy buttons since they won't work anymore
-            const copyAndThebeButtons = document.querySelectorAll('.copybtn, .thebebtn')
-            copyAndThebeButtons.forEach((button, index) => {
-                button.remove();
-            });
-
-            // Remove outputs since they'll be stale
-            const outputs = document.querySelectorAll('.output *, .output')
-            outputs.forEach((output, index) => {
-                output.remove();
-            });
-        }
-
-        // Add event listener for the function to modify code cells
-        const thebelabButtons = document.querySelectorAll('[id^=thebelab], [id$=thebelab]')
-        thebelabButtons.forEach((thebelabButton,index) => {
-            if (thebelabButton === null) {
-                setTimeout(initThebelab, 250)
-                return
-            };
-            thebelabButton.addEventListener('click', addThebelabToCodeCells);
-        });
-    }
-
-    // Initialize Thebelab
-    initFunction(initThebelab);
-</script>
 
 
 
@@ -737,7 +609,7 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/think-data/getting-started/installation.html"
+          href="/think-data/0-getting-started/installation.html"
         >
           
           Getting started
@@ -759,7 +631,7 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/think-data/getting-started/intro_jupyter.html"
+                  href="/think-data/0-getting-started/intro_jupyter.html"
                 >
                   
                   Introduction to Jupyter
@@ -776,7 +648,7 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/think-data/getting-started/shortcuts.html"
+                  href="/think-data/0-getting-started/shortcuts.html"
                 >
                   
                   Useful Shortcuts
@@ -793,7 +665,7 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/think-data/getting-started/extensions.html"
+                  href="/think-data/0-getting-started/extensions.html"
                 >
                   
                   Useful Extensions
@@ -821,10 +693,10 @@ initFunction(initQuery);
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/think-data/basics/Preface.html"
+          href="/think-data/1-intro-programming/hello-world.html"
         >
           
-          Notebook Testing
+          Introduction to Programming
         </a>
 
         
@@ -843,10 +715,10 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/think-data/basics/IPython-Beyond-Normal-Python.html"
+                  href="/think-data/1-intro-programming/math.html"
                 >
                   
-                  IPython
+                  Basic Math Expressions
                 </a>
 
                 
@@ -860,10 +732,145 @@ initFunction(initQuery);
 
               <li class="c-sidebar__section">
                 <a class="c-sidebar__entry "
-                  href="/think-data/basics/Help-And-Documentation.html"
+                  href="/think-data/1-intro-programming/variables.html"
                 >
                   
-                  Help
+                  Python Variables
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/1-intro-programming/call-expressions.html"
+                >
+                  
+                  Call Expressions
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/think-data/2-python-types/intro-types.html"
+        >
+          
+          Python Data Types
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/2-python-types/numbers.html"
+                >
+                  
+                  Numbers
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/2-python-types/strings.html"
+                >
+                  
+                  Strings
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/2-python-types/booleans.html"
+                >
+                  
+                  Booleans
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/2-python-types/tuples_lists_dicts.html"
+                >
+                  
+                  Tuples, Lists, and Dictionaries
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/think-data/2-python-types/type_casting.html"
+                >
+                  
+                  Type Casting
                 </a>
 
                 
@@ -930,6 +937,38 @@ initFunction(initQuery);
 <script>
     // Add the lunr store since we will now search it
     var store = [{
+        "title": "Useful Extensions",
+        
+        "excerpt":
+            "Useful Extensions (Optional) There are also a number of extensions that add functionality to the Jupyter Notebook. This section is totally optional but I’ve found some of the extensions to be quite useful. Essentially, extensions are add-ons to extend the functionality of Jupyter Notebooks. If you use Anaconda, you can get started by running in the Terminal: conda install -c conda-forge jupyter_contrib_nbextensions If you use pip, you can run the Terminal: pip install jupyter_contrib_nbextensions &amp;&amp; jupyter contrib nbextension install If you have Jupyter currently running, you will need to restart it by pressing CTRL+C and then Y to confirm to...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/0-getting-started/extensions.html",
+        "teaser":null},{
+        "title": "Getting started",
+        
+        "excerpt":
+            "Installation There are multiple ways to install Python. The easiest way to do so is through the Anaconda distribution which comes in two flavours: Anaconda Anaconda is a very large installation (~3GB) and is most useful for users who are not familiar with installing modules or packages with other package managers. Choose Anaconda if you: Are new to conda or Python Like the convenience of having Python and over 150 scientific packages automatically installed at once Have the time and disk space You can install Anaconda here. Make sure to get the Python 3 version. Miniconda Miniconda simply gives you...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/0-getting-started/installation.html",
+        "teaser":null},{
+        "title": "Introduction to Jupyter",
+        
+        "excerpt":
+            "Introduction to Jupyter For all of this book, we will be working in Jupyter Notebooks, which is a web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. I like to think of Jupyter Notebooks as the perfect medium for doing and sharing exploratory data analysis work. To me, Notebooks are the ideal sandbox for playing around with new ideas and tools. Creating Your First Jupyter Notebook Depending on how you installed Jupyter, there are several ways to open up a Jupyter Notebook. One of them is through the Anaconda Navigator...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/0-getting-started/intro_jupyter.html",
+        "teaser":null},{
+        "title": "Useful Shortcuts",
+        
+        "excerpt":
+            "Common Shortcuts Before we start coding, I would like to share a few common Jupyter Notebook shortcuts that make navigating and editing code so much easier. These are all pretty basic and there are other more advanced shortcuts that I’ll link to at the end. Navigating and Editing There are two modes in Jupyter: edit mode and command mode. You can enter edit mode by pressing the ENTER key and switch back to command mode by pressing the ESC key. In edit mode you can type input into the selected cell while in command mode you are able to navigate...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/0-getting-started/shortcuts.html",
+        "teaser":null},{
         "title": "Introduction",
         
         "excerpt":
@@ -1098,6 +1137,86 @@ initFunction(initQuery);
         "tags": [],
         "url": "http://0.0.0.0:4000/think-data/04/Types.html",
         "teaser":null},{
+        "title": "Call Expressions",
+        
+        "excerpt":
+            "        # TODO             ",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/1-intro-programming/call-expressions.html",
+        "teaser":null},{
+        "title": "Introduction to Programming",
+        
+        "excerpt":
+            "Hello World In this section, I want to introduce the basics of programming. While the following subsections are relatively straightforward, I guarantee that you will be using everything in here throughout your data science journey! The most simple function and in my opinion the most useful function is the print() statement. This function is extremely useful for debugging code and checking variable values. To print something in Python 3, just write the following and run the cell by pressing Shift+Enter: print(\"Hello World\") Hello World You could use single quotation marks and do: print('Hello World') Hello World Single quotation marks do...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/1-intro-programming/hello-world.html",
+        "teaser":null},{
+        "title": "Basic Math Expressions",
+        
+        "excerpt":
+            "Basic Math Operations You can use Python as a calculator to perform mathematical operations like addition, subtraction, multiplication, and division. Operator Description Syntax + Addition: adds two operands x + y - Subtraction: subtracts two operands x - y * Multiplication: multiplies two operands x * y / Division (float): divides the first operand by the second x / y // Division (floor): divides the first operand by the second x // y % Modulus: remainder when first operand is divided by the second x % y ** Exponential: Takes first operand to the power of second operand x **...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/1-intro-programming/math.html",
+        "teaser":null},{
+        "title": "Python Variables",
+        
+        "excerpt":
+            "# TODO: Create variable guide Assigning Values to Variables Sometimes you may want to print a variable to see its contents. Variables are essentially reserved memory locations to store values. When you assign some value to a variable using =, the operand to the left of = is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For instance, Passing Variables to Strings You may want to print a sentence with a variable at times. Some ways to do this are apple = 12 print('Apples are', apple,...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/1-intro-programming/variables.html",
+        "teaser":null},{
+        "title": "Booleans",
+        
+        "excerpt":
+            "        # bools             ",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/2-python-types/booleans.html",
+        "teaser":null},{
+        "title": "Python Data Types",
+        
+        "excerpt":
+            "        # TODO: copy types.md over             ",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/2-python-types/intro-types.html",
+        "teaser":null},{
+        "title": "Numbers",
+        
+        "excerpt":
+            "        # TODO: int and float             ",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/2-python-types/numbers.html",
+        "teaser":null},{
+        "title": "Strings",
+        
+        "excerpt":
+            "        # Strings             ",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/2-python-types/strings.html",
+        "teaser":null},{
+        "title": "Tuples, Lists, and Dictionaries",
+        
+        "excerpt":
+            "Tuples, Lists, and Dictionaries As an interactive way to learn about these collection data types, first consider these three problems: Let’s say we wanted to store a long list of information in a variable that doesn’t change over time? For example, the names of the days of the week don’t change at all. Let’s say we also wanted to store a long list of information in a variable that changes over time? For instance, the names of all your cats. You might get new kittens and some cats might unfortunately die. You will need to make updates to your list...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/2-python-types/tuples_lists_dicts.html",
+        "teaser":null},{
+        "title": "Type Casting",
+        
+        "excerpt":
+            "Type Casting A Brief Introduction to Python Data Types Users of Python are often drawn-in by its ease of use, one piece of which is dynamic typing. While a statically-typed language like Java or C requires each variable to be explicitly declared, a dynamically-typed language like Python skips this specification. As a simple demonstration: // java code String a = \"Hello!\" int b = 2 boolean c = true As you can see, each variable needs to explicitly declared a type. In contrast, the equivilant in Python is as follows: # python code a = 'Hello' b = 2 c...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/2-python-types/type_casting.html",
+        "teaser":null},{
         "title": "Help",
         
         "excerpt":
@@ -1122,6 +1241,46 @@ initFunction(initQuery);
         "tags": [],
         "url": "http://0.0.0.0:4000/think-data/basics/Preface.html",
         "teaser":null},{
+        "title": "Hello World",
+        
+        "excerpt":
+            "Hello World In this section, I want to introduce the basics of using Python for data analysis. While the following subsections are relatively straightforward, I guarantee that you will be using everything in here throughout your data science journey! The most simple function and in my opinion one the most useful functions is the print() statement. This function is extremely useful for debugging code and checking variable values. To print something in Python 3, just write the following and run the cell by pressing Shift+Enter: print('Hello World') Hello World Assigning Values to Variables Sometimes you may want to print a...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/hello_world.html",
+        "teaser":null},{
+        "title": "Data Cleaning",
+        
+        "excerpt":
+            "import numpy as np import pandas as pd import json import os Reads .json Files and Combines them into .csv df = pd.DataFrame() for num in np.arange(15, 995, 10): lower_bound = str(num) upper_bound = str(num + 10) filename = lower_bound + \"to\" + upper_bound + \".json\" # Check if file is empty if os.stat(filename).st_size != 0: some_df = pd.read_json(filename) df = pd.concat([df, some_df]) len(df) 6414 df.drop_duplicates(subset='url', keep='first', inplace=True) len(df) 5796 df.shape (5796, 37) df.to_csv('cancun_scrape_5.csv', index=False) df[df['url'] == 'https://www.airbnb.com/rooms/10823831'] accuracy amt_w_service avg_rating bathrooms bedrooms can_instant_book checkin cleanliness communication currency ... price rate_type response_rate response_time reviews_count room_type_category star_rating url value weekly_price_factor 76...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/kl-cancun-data-cleaning.html",
+        "teaser":null},{
+        "title": "Feature Importance",
+        
+        "excerpt":
+            "%matplotlib inline import numpy as np import pandas as pd import matplotlib.pyplot as plt import seaborn as sns # import pandas_profiling import statsmodels.formula.api as smf cancun_variables = pd.read_csv('../data/processed/cancun_variables.csv') features = cancun_variables.drop(columns=['currency', 'url',]) features.shape (6669, 16) features.head(3) accuracy avg_rating checkin cleanliness communication guest_satisfication host_reviews location monthly_price_factor picture_count price response_rate reviews_count value weekly_price_factor listing_key 0 10 4.74 10 9 10 95 311 10 0.88 19 22 100 50 10 0.88 20776319 1 10 4.93 10 10 10 99 147 10 0.85 22 28 100 108 10 0.90 16492050 2 10 4.72 10 9 10 94 1376 9 1.00 14 30 100 243...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/kl-cancun-feature-importance.html",
+        "teaser":null},{
+        "title": "Notebook Testing",
+        
+        "excerpt":
+            "%matplotlib inline import numpy as np import pandas as pd import pandas_profiling import matplotlib.pyplot as plt import seaborn as sns import re cancun = pd.read_csv('../data/interim/cancun_unclean.csv') # Initial report for exploratory # profile = cancun.profile_report(title='Pandas Profiling Report') # profile.to_file(output_file=\"cancun_unclean.html\") Inital Exploration cancun.shape (6673, 37) cancun.isnull().sum().sort_values(ascending=False).head(7) localized_neighborhood 6673 star_rating 3044 response_time 1217 listing_name 7 bathrooms 2 bedrooms 2 currency 0 dtype: int64 Dealing with Missing Values Spider scraped 37 fields for around 6673 listings in Cancún but not all fields are important or have no missing values. That said, there is some manual selection to be done. Since there are only 37...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/kl-cancun-initial-exploration.html",
+        "teaser":null},{
+        "title": "Math",
+        
+        "excerpt":
+            "Basic Math Operations You can use Python as a calculator to perform mathematical operations like addition, subtraction, multiplication, and division. Operator Description Syntax + Addition: adds two operands x + y - Subtraction: subtracts two operands x - y * Multiplication: multiplies two operands x * y / Division (float): divides the first operand by the second x / y // Division (floor): divides the first operand by the second x // y % Modulus: remainder when first operand is divided by the second x % y ** Exponential: Takes first operand to the power of second operand x **...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/math.html",
+        "teaser":null},{
         "title": "Test2",
         
         "excerpt":
@@ -1137,6 +1296,30 @@ initFunction(initQuery);
         "categories": [],
         "tags": [],
         "url": "http://0.0.0.0:4000/think-data/basics/test_notebook.html",
+        "teaser":null},{
+        "title": "Tuples, Lists, and Dicts",
+        
+        "excerpt":
+            "Tuples, Lists, and Dictionaries As an interactive way to learn about these collection data types, first consider these three problems: Let’s say we wanted to store a long list of information in a variable that doesn’t change over time? For example, the names of the days of the week don’t change at all. Let’s say we also wanted to store a long list of information in a variable that changes over time? For instance, the names of all your cats. You might get new kittens and some cats might unfortunately die. You will need to make updates to your list...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/tuples_lists_dicts.html",
+        "teaser":null},{
+        "title": "Type Casting",
+        
+        "excerpt":
+            "Type Casting A Brief Introduction to Python Data Types Users of Python are often drawn-in by its ease of use, one piece of which is dynamic typing. While a statically-typed language like Java or C requires each variable to be explicitly declared, a dynamically-typed language like Python skips this specification. As a simple demonstration: // java code String a = 'Hello!' int b = 2 boolean c = true As you can see, each variable needs to explicitly declared a type. In contrast, the equivilant in Python is as follows: # python code a = 'Hello' b = 2 c...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/type_casting.html",
+        "teaser":null},{
+        "title": "Types",
+        
+        "excerpt":
+            "Introduction to Types Every value in Python has a type. First let’s have a short discussion of the most common, basic types that are built into Python. We can check the type of each value by using the Python built-in type() function. Booleans A boolean is a data type that almost every programming language has. A Boolean in Python can have two values: True or False. These values are constants and can be used to assign or compare boolean values. In [1]: type(True) Out[1]: bool In [2]: type(False) Out[2]: bool Numbers Integers, floating point numbers, and complex numbers fall under...",
+        "categories": [],
+        "tags": [],
+        "url": "http://0.0.0.0:4000/think-data/basics/types.html",
         "teaser":null},{
         "title": "Features and customization",
         
