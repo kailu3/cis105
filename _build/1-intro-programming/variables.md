@@ -4,7 +4,7 @@ kernel_name: python3
 has_widgets: false
 title: 'Python Variables'
 prev_page:
-  url: /1-intro-programming/math.html
+  url: /1-intro-programming/basic_math.html
   title: 'Basic Math Expressions'
 next_page:
   url: /1-intro-programming/call-expressions.html
@@ -13,10 +13,18 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ---
 
 
+# Python Variables
+
+
+
+Using variables is essential to all programming languages. I like to think of a variable as a nametag attached to an object. Variables are essentially reserved memory locations to store values. In Python, variables do not need to be declared or defined in advance like other programming languages such as Java. To create a variable, we just assign it a value and then can start using it. Assignment is done with a single equals sign `=`
+
+
+
 <div markdown="1" class="cell code_cell">
 <div class="input_area" markdown="1">
 ```python
-# TODO: Create variable guide
+colour_of_car = "red"
 
 ```
 </div>
@@ -25,16 +33,136 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 
 
-## Assigning Values to Variables
+> This is read as `colour_of_car` is assigned the value 'red'. Once this is done, `colour_of_car` can be used in any statement or expression, and its value will be substituted.
 
-Sometimes you may want to print a variable to see its contents. Variables are essentially reserved memory locations to store values. When you **assign** some value to a variable using `=`, the operand to the left of `=` is the name of the variable and the operand
-to the right of the `=` operator is the value stored in the variable. For instance,
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+print(colour_of_car)
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+{:.output_stream}
+```
+red
+```
+</div>
+</div>
+</div>
+
+
+
+Python also supports multiple assignment, which allows you to assign values to multiple variables in one line.
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+x, y, z = 1, 2, 3
+print(x + y + z)
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+{:.output_stream}
+```
+6
+```
+</div>
+</div>
+</div>
+
+
+
+You can also assign the same value to multiple variables in one line. I don't use this one often though!
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+x = y = z = "cat"
+print(x)
+print(y)
+print(z)
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+{:.output_stream}
+```
+cat
+cat
+cat
+```
+</div>
+</div>
+</div>
+
+
+
+## Variable Names
+
+
+
+Here are some rules for naming your variables:
+- A variable name must start with a letter or the `_` character
+- A variable name cannot start with a number
+- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and `_` )
+- Variable names are case-sensitive (cat, Cat, and caT are three different variables)
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+cat = 2
+print(Cat) # mistyping variable names is a very common error!
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+{:.output_traceback_line}
+```
+
+    -----------------------------------------------------------------------
+
+    NameError                             Traceback (most recent call last)
+
+    <ipython-input-6-c8a2b97be72a> in <module>
+          1 cat = 2
+    ----> 2 print(Cat) # mistyping variable names is a very common error!
+    
+
+    NameError: name 'Cat' is not defined
+
+
+```
+</div>
+</div>
+</div>
+
+
+
+> As a quick tip, when typing your variable you can press `TAB` to bring up a drop down or autocomplete your variable name.
 
 
 
 ## Passing Variables to Strings
 
-You may want to print a sentence with a variable at times. Some ways to do this are
+You may want to print a message with a variable at times to help with debugging. Some ways to do this are
 
 
 

@@ -25,10 +25,10 @@
 
 - divider: true
 
-- title: Getting started
+- title: 0. Getting started
   url: /0-getting-started/installation
   not_numbered: true
-  expand_sections: true
+  expand_sections: false
   sections:
   - title: Introduction to Jupyter
     url: /0-getting-started/intro_jupyter
@@ -38,22 +38,22 @@
     url: /0-getting-started/extensions
 
 
-- title: Introduction to Programming
+- title: 1. Introduction to Programming
   url: /1-intro-programming/hello-world
   not_numbered: true
-  expand_sections: true
+  expand_sections: false
   sections:
   - title: Basic Math Expressions
-    url: /1-intro-programming/math
+    url: /1-intro-programming/basic_math
   - title: Python Variables 
     url: /1-intro-programming/variables
   - title: Call Expressions
     url: /1-intro-programming/call-expressions
   
-- title: Python Data Types
+- title: 2. Python Data Types
   url: /2-python-types/intro-types
   not_numbered: true
-  expand_sections: true
+  expand_sections: false
   sections:
   - title: Numbers
     url: /2-python-types/numbers
