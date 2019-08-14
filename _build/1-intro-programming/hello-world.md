@@ -2,12 +2,12 @@
 interact_link: content/1-intro-programming/hello-world.ipynb
 kernel_name: python3
 has_widgets: false
-title: 'Introduction to Programming'
+title: '1. Introduction to Programming'
 prev_page:
   url: /0-getting-started/extensions.html
   title: 'Useful Extensions'
 next_page:
-  url: /1-intro-programming/math.html
+  url: /1-intro-programming/basic_math.html
   title: 'Basic Math Expressions'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
