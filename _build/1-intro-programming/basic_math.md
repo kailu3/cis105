@@ -17,8 +17,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 # Basic Math Operations
 
-You can use Python as a calculator to perform mathematical operations like addition, subtraction, multiplication, and division.
-
+Let's first try some simple commands. In this section, we learn to use Python as a calculator to perform mathematical operations like addition, subtraction, multiplication, and division. The examples so far are basic and I would recommend playing around with some examples on your own.
 
 
 

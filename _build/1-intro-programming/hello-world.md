@@ -67,7 +67,7 @@ Hello World
 
 
 
-Single quotation marks do pretty much everything double quotation marks do. Double quotation marks are preferred as they can handle apostrophes in strings. For example:
+Single quotation marks do pretty much everything double quotation marks do. Double quotation marks are usually preferred as they can handle apostrophes in strings. For example:
 
 
 
@@ -115,4 +115,8 @@ print('Hello! I'm a cat!')
 </div>
 </div>
 </div>
+
+
+
+>I have a habit of using single quotation marks since I am lazy and don't like pressing two keys so you might see many uses of single quotation marks. At the end of the day, there's not much difference between the two besides allowing for apostrophes in strings.
 

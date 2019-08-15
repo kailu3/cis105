@@ -33,7 +33,7 @@ colour_of_car = "red"
 
 
 
-> This is read as `colour_of_car` is assigned the value 'red'. Once this is done, `colour_of_car` can be used in any statement or expression, and its value will be substituted.
+> This is read as `colour_of_car` is assigned the string "red". Once this is done, `colour_of_car` can be used in any statement or expression, and its value will be substituted.
 
 
 

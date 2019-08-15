@@ -229,7 +229,7 @@ import pandas as pd
 
 
 
-You can pretty much import any package under any name though I would not recommend it. There are some standards in place and you should follow them.
+You can pretty much import any library under any name though I would not recommend it. There are some standards in place and you should follow them.
 
 
 

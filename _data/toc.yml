@@ -66,13 +66,19 @@
   - title: Type Casting
     url: /2-python-types/type_casting
    
-
-# Intro to NumPy next 
-
-- title: GitHub repository
-  url: https://github.com/kailu3/think-data
-  external: true
+- title: 3. Introduction to NumPy
+  url: /3-numpy/intro-numpy
   not_numbered: true
+  expand_sections: false
+  sections:
+  
+  
+- title: 4. Introduction to Pandas
+  url: /4-pandas/intro-pandas
+  not_numbered: true
+  expand_sections: false
+  sections:
+
 
 
 
