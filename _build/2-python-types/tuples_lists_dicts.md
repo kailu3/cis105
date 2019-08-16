@@ -1,6 +1,9 @@
 ---
 redirect_from:
   - "/2-python-types/tuples-lists-dicts"
+interact_link: content/2-python-types/tuples_lists_dicts.ipynb
+kernel_name: python3
+has_widgets: false
 title: 'Tuples, Lists, and Dictionaries'
 prev_page:
   url: /2-python-types/booleans.html
@@ -10,6 +13,8 @@ next_page:
   title: 'Type Casting'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
+
+
 # Tuples, Lists, and Dictionaries
 
 As an interactive way to learn about these collection data types, first consider these three problems:
@@ -20,7 +25,10 @@ As an interactive way to learn about these collection data types, first consider
 
 3. Let's say we wanted to create a phonebook with every CIS105 student's name and phone number. You would need a list of names and a list of phone numbers and some way to find the student's phone number when only given his or her name.
 
-## The Solution - Tuples, Lists, and Dictionaries
+
+
+
+## The Solution -> Tuples, Lists, and Dictionaries
 
 For each of these three problems, there are built-in data types in Python to solve them.
 
@@ -30,10 +38,24 @@ Using Tuples would solve the first problem. Tuples are immutable which means tha
 is the perfect data type is store something like the `the days of the week` as they do not change ever. Tuples are quite 
 easy to make:
 
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
 days_of_week = ('Monday', 'Tuesday', 'Wednesday', \
                 'Thursday', 'Friday', 'Saturday', 'Sunday')
+
 ```
+</div>
+
+</div>
+
+
+
+> **Quick Tip:** The backslash key `\` allows you to continue your statement on the next line! 
+
+
 
 which Python then organizes into something that looks like this:
 
@@ -47,54 +69,202 @@ which Python then organizes into something that looks like this:
 | 5     | Saturday |
 | 6     | Sunday   |
 
->`Index` might be new to those haven't programmed before! Put simply, an index refers to a position within a sequence. In Python and most programming languages, we start at position `0`.
+
+
+To access a `Value` in our tuple, we do so by indexing! This is exactly the same as what we learned in the `Strings` section.
 
 We can demonstrate with an example: Let's say we want to access `Monday` from the `days_of_week` tuple which in the first position. To do that, we can simply access with:
 
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
-In [1]: days_of_week[0]
-Out[1]: Monday
+days_of_week[0]
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+'Monday'
 ```
 
+
+</div>
+</div>
+</div>
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+days_of_week[-1]
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+'Sunday'
+```
+
+
+</div>
+</div>
+</div>
+
+
+
 You can learn about Tuples [here](https://www.w3schools.com/python/python_tuples.asp).
+
+
 
 ## Lists
 
 Using Lists would solve the second problem. A List is essentially a list of values and are mutable, which means that they can be modified. Lists can also contain different datatypes.
 
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
-some_cat_list = ['haku', 'nagi', 'poki', 20]
+some_cat_list = ['haku', 'nagi', 'poki', 20, 40]
 
 ```
+</div>
+
+</div>
+
+
+
 Now suppose we were looking through our `some_cat_list` and we realized we wanted to remove `20` as it might've been a happy little accident. To do that, we simply can type
 
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
 some_cat_list.remove(20)
-```
-Suppose we didn't know the item we wanted to remove but knew its **index**. If we wanted to remove an item in `20`'s location, we can type
 
-```python
-del some_cat_list[3]
 ```
+</div>
+
+</div>
+
+
+
+Suppose we didn't know the item we wanted to remove but knew its **index**. If we wanted to remove an item in `40`'s location, we can type
+
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+# Note that since we removed 20, 40's position shifts forward by 1!
+del some_cat_list[3] 
+
+```
+</div>
+
+</div>
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+some_cat_list
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+['haku', 'nagi', 'poki']
+```
+
+
+</div>
+</div>
+</div>
+
+
 
 Now maybe you adopted another cat called kiki and would like to add her to the list. To do that, we could type
 
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
 some_cat_list.append('kiki')
 
 ```
+</div>
+
+</div>
+
+
 
 which would append kiki onto the end of the list. Or if we want to change kiki's name to mei instead given a change of mind, we could do so easily by changing the item at the last index.
 
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
 some_cat_list[-1] = 'mei'
 
 ```
+</div>
 
-> While `0` refers to the position of the first item in the list, `-1` refers to the last item in the list. Moreover, `-2`
-would be the second last item in the list.
+</div>
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+some_cat_list
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+['haku', 'nagi', 'poki', 'mei']
+```
+
+
+</div>
+</div>
+</div>
+
+
 
 You can learn more about Lists [here](https://www.w3schools.com/python/python_lists.asp).
+
+
 
 ## Dictionaries
 
@@ -104,58 +274,171 @@ It might be trivial but every `word` in the dictionary maps to some `definition`
 have `keys` and `values` where a `key` can map to some `value`. Here we make a dictionary of CIS105 student names and
 their phone numbers:
 
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
 some_dict = {
     'Kai': 1231231231,
     'Lin': 3213213213,
     'Racheal': 964296429
 }
+
 ```
+</div>
 
-Now, say we want to access `Racheal's` phone number from the dictionary. We can simply do so get *getting* her number
-using her name as the `key`.
+</div>
 
-### Method 1 (Recommended)
 
+
+Now, say we want to access `Racheal's` phone number from the dictionary. We can simply do so get *getting* her number using her name as the `key`. You can do so in two ways:
+
+
+
+### Method 1
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
-In [1]: some_dict.get('Racheal')
-Out[1]: 964296429
+some_dict.get('Racheal')
+
 ```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+964296429
+```
+
+
+</div>
+</div>
+</div>
+
+
 
 ### Method 2
 
-Some people might remember that you can also access the `value` by doing:
 
-```python
-In [1]: some_dict['Racheal']
-Out[1]: 964296429
-```
-This does work when the `key` is present but I would **NOT** recommend it. Suppose we wanted to find Bob's phone number. However,
-Bob unfortunately had not been recorded in `some_dict` yet.
 
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
-In [1]: some_dict['Bob']
-Out[1]: KeyError
+some_dict['Racheal']
+
 ```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+964296429
+```
+
+
+</div>
+</div>
+</div>
+
+
+
+**However**, this only works when the `key` is present and I would **NOT** recommend using this method. 
+
+Suppose we wanted to find Bob's phone number. However, Bob unfortunately had not been recorded in `some_dict` yet.
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+some_dict['Bob']
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+{:.output_traceback_line}
+```
+
+    -------------------------------------------------------------------------
+
+    KeyError                                Traceback (most recent call last)
+
+    <ipython-input-17-0a6d42b2d742> in <module>()
+    ----> 1 some_dict['Bob']
+    
+
+    KeyError: 'Bob'
+
+
+```
+</div>
+</div>
+</div>
+
+
+
 If the `key` 'Bob' does not exist in the dictionary, this would throw a KeyError which is uninformative and not good.
-> Now suppose we use the `.get` method to try and get Bob's phone number:
 
+Now suppose we use the `.get` method to try and get Bob's phone number:
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
 ```python
-In [1]: bobs_number = some_dict.get('Bob')
-        print(bobs_number)
-Out[1]: None
-```
-
-As you can see, the `.get` method defaults to `None`. You are also able to specify an informative message when the `key` does
-not exist which is much better than causing a `KeyError`. For example:
-
-```python
-In [1]: bobs_number = some_dict.get('Bob', 'The key You are looking for does not exist!')
-        print(bobs_number)
-Out[1]: 'The key You are looking for does not exist!'
+some_dict.get('Bob')
 
 ```
+</div>
+
+</div>
+
+
+
+This returns nothing when we run it. If we try and store and then print the output, we will get `None`. However, what's good about using this method is that we can specify an an informative message when the `key` does
+not exist .
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+some_dict.get('Bob', 'Key does not exist!')
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+'Key does not exist!'
+```
+
+
+</div>
+</div>
+</div>
+
+
 
 >This is much more informative when debugging!
 
+
+
 You may also learn more about Dictionaries [here](https://www.w3schools.com/python/python_dictionaries.asp).
+

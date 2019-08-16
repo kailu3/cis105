@@ -5,7 +5,7 @@ has_widgets: false
 title: 'Numbers'
 prev_page:
   url: /2-python-types/intro-types.html
-  title: 'Python Data Types'
+  title: '2. Python Data Types'
 next_page:
   url: /2-python-types/strings.html
   title: 'Strings'
@@ -13,13 +13,25 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ---
 
 
-<div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
-```python
-# TODO: int and float
+# Numbers
 
-```
-</div>
 
-</div>
+
+As we've seen in the `Basic Math` section, we can use numbers to perform calculations. In this section, I will explain in detail the differences between the different types of numbers: `int`, `float`, and `complex` as well as some common methods we can use with them.
+
+
+
+## Integers
+
+
+
+## Floats
+
+
+
+## Complex Numbers
+
+
+
+## Numeric Methods
 

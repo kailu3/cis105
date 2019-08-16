@@ -650,7 +650,5 @@ some_string.replace("Hello", "Goodbye")
 
 
 
-All these just scratch the surface. You can find more string methods here!
-
-https://www.w3schools.com/python/python_ref_string.asp
+All these just scratch the surface. You can find more string methods [here](https://www.w3schools.com/python/python_ref_string.asp).
 

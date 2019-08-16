@@ -12,7 +12,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 This is a book documenting the useful things I've learned in CIS 105
 Computational Data Exploration and well as useful Python snippets here and
-there I like to use for data analysis. - Kai
+there I like to use for data analysis. 
+- Kai
 
 ## Who Is This Book For?
 

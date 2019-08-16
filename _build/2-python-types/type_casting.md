@@ -9,8 +9,8 @@ prev_page:
   url: /2-python-types/tuples_lists_dicts.html
   title: 'Tuples, Lists, and Dictionaries'
 next_page:
-  url: https://github.com/kailu3/think-data
-  title: 'GitHub repository'
+  url: /3-numpy/intro-numpy.html
+  title: '3. Introduction to NumPy'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
@@ -19,8 +19,6 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 
 
-
-## A Brief Introduction to Python Data Types
 
 Users of Python are often drawn-in by its ease of use, one piece of which is dynamic typing. While a statically-typed language like Java or C requires each variable to be explicitly declared, a dynamically-typed language like Python skips this specification. As a simple demonstration:
 
