@@ -39,7 +39,7 @@ opinion is an improvable skill. There is a great quote from **Jake VanderPlas** 
 
 If you notice opportunities for improvements in terms of typos, spelling, grammar, syntax, etc., feel free to leave a comment on the right. You'll most likely be right.
 
-If you have any topics that I could potentially go over or explain clearer and in more detail, please create an **issue** and describe the topic. You can create an issue [here](https://github.com/kailu3/python-data-analysis/issues). I'll try my best to address it as soon as possible.
+If you have any topics that I could potentially go over or explain clearer and in more detail, please create an **issue** and describe the topic. You can create an issue [here](https://forms.gle/nuxf4Se3rRdzxzj96). I'll try my best to address it as soon as possible.
 
 ## References
 

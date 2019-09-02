@@ -16,7 +16,9 @@ cells with the up/down arrow keys.
 
 ![Edit Mode](../images/edit_mode.png)
 
+
 - **Command Mode** is indicated by a <span style="color:blue">*blue*</span> left margin.
+
 ![Command Mode](../images/command_mode.png)
 
 ## Command Mode Shortcuts
@@ -48,7 +50,7 @@ You can find a quick cheatsheet for it [here](https://www.markdownguide.org/chea
 
 ## Edit Mode Shortcuts
 
-**Note:** Windows user will have to replace `CMD` with the `Ctrl` key in the following shortcuts.
+**Note:** Windows users will have to replace `CMD` with the `Ctrl` key in the following shortcuts.
 
 While in **edit mode**,
 

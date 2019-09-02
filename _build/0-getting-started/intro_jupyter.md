@@ -4,7 +4,7 @@ redirect_from:
 title: 'Introduction to Jupyter'
 prev_page:
   url: /0-getting-started/installation.html
-  title: 'Getting started'
+  title: '0. Getting started'
 next_page:
   url: /0-getting-started/shortcuts.html
   title: 'Useful Shortcuts'
@@ -12,7 +12,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 ---
 # Introduction to Jupyter
 
-For all of this book, we will be working in Jupyter Notebooks, which is a web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. I like to think of Jupyter Notebooks as the perfect medium for doing and sharing exploratory data analysis work. To me, Notebooks are the ideal sandbox for playing around with new ideas and tools.
+For all of this book, we will be working in Jupyter Notebooks, which is a web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text. I think of Jupyter Notebooks as the perfect medium for doing and sharing exploratory data analysis work. Notebooks are the ideal sandbox for playing around with new ideas and tools.
 
 ## Creating Your First Jupyter Notebook
 
@@ -39,7 +39,7 @@ You can create a Notebook from the right dropdown by selecting Python 3.
 
 The Jupyter team recently \(2018\) created a newer user interface that offers all the familiar building blocks of the classic Jupyter Notebook \(notebook, terminal, text editor, file browser, rich outputs, etc.\) in a more flexible and powerful interface. The project is called **JupyterLab** and essentially provides everything Jupyter Notebooks has but better \(my opinion\).
 
-> I think CIS 105 is currently taught using Jupyter Notebooks so using JupyterLab is totally not necessary, but good to know that this exists.
+> CIS 105 is currently taught using Jupyter Notebooks so using JupyterLab is totally not necessary, but good to know that this exists.
 
 You can get JupyterLab [here](https://github.com/jupyterlab/jupyterlab).‌
 
