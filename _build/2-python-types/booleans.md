@@ -94,27 +94,22 @@ We typically use Boolean values to make comparisons between two objects. While t
 
 
 
+**Scenario:** Let's say you are looking for an Airbnb home to stay in for an upcoming trip. Now, you can't just pick any Airbnb listing as you would most likely need to filter the possibilities down to the listings that most satisfy your personal requirements. Now, suppose you had a dataset containing all of the listings in the location you are looking at. However, there are some contraints that you need to consider:
+- You need to look for listings <100 usd to be able to reimburse your trip
+- Since you are travelling with a classmate, you would prefer two beds in your Airbnb home
+- You want a listing that you can book instantly since your flight leaves tomorrow
+
+
+
 <div markdown="1" class="cell code_cell">
 <div class="input_area" markdown="1">
 ```python
-from sklearn import datasets
 import pandas as pd
 
-url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
-names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = pandas.read_csv(url, names=names)
-
-```
-</div>
-
-</div>
-
-
-
-<div markdown="1" class="cell code_cell">
-<div class="input_area" markdown="1">
-```python
-dataset
+# Importing Data
+url = "https://raw.githubusercontent.com/kailu3/think-data/master/content/data/airbnb.csv"
+dataset = pandas.read_csv(url)
+dataset.head(5)
 
 ```
 </div>
@@ -143,505 +138,116 @@ dataset
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>sepal-length</th>
-      <th>sepal-width</th>
-      <th>petal-length</th>
-      <th>petal-width</th>
-      <th>class</th>
+      <th>bathrooms</th>
+      <th>bedrooms</th>
+      <th>num_beds</th>
+      <th>can_instant_book</th>
+      <th>is_fully_refundable</th>
+      <th>is_superhost</th>
+      <th>is_new_listing</th>
+      <th>room_type_category</th>
+      <th>person_capacity</th>
+      <th>lat</th>
+      <th>lng</th>
+      <th>price</th>
+      <th>url</th>
+      <th>listing_key</th>
+      <th>price_in_usd</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>private_room</td>
+      <td>2</td>
+      <td>21.13566</td>
+      <td>-86.76741</td>
+      <td>22</td>
+      <td>https://www.airbnb.com/rooms/20776319</td>
+      <td>20776319</td>
+      <td>16.541353</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>4.9</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>private_room</td>
+      <td>2</td>
+      <td>21.14571</td>
+      <td>-86.84190</td>
+      <td>28</td>
+      <td>https://www.airbnb.com/rooms/16492050</td>
+      <td>16492050</td>
+      <td>21.052632</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.3</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
+      <td>1.5</td>
+      <td>1.0</td>
+      <td>1</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>private_room</td>
+      <td>2</td>
+      <td>21.13119</td>
+      <td>-86.76394</td>
+      <td>30</td>
+      <td>https://www.airbnb.com/rooms/14266451</td>
+      <td>14266451</td>
+      <td>22.556391</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>4.6</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
+      <td>1.0</td>
+      <td>2.0</td>
+      <td>2</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>entire_home</td>
+      <td>5</td>
+      <td>21.15737</td>
+      <td>-86.83975</td>
+      <td>24</td>
+      <td>https://www.airbnb.com/rooms/17625889</td>
+      <td>17625889</td>
+      <td>18.045113</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>5.0</td>
-      <td>3.6</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>5.4</td>
-      <td>3.9</td>
-      <td>1.7</td>
-      <td>0.4</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>4.6</td>
-      <td>3.4</td>
-      <td>1.4</td>
-      <td>0.3</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>5.0</td>
-      <td>3.4</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>4.4</td>
-      <td>2.9</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>4.9</td>
-      <td>3.1</td>
-      <td>1.5</td>
-      <td>0.1</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>5.4</td>
-      <td>3.7</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>4.8</td>
-      <td>3.4</td>
-      <td>1.6</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>4.8</td>
-      <td>3.0</td>
-      <td>1.4</td>
-      <td>0.1</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>4.3</td>
-      <td>3.0</td>
-      <td>1.1</td>
-      <td>0.1</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>5.8</td>
-      <td>4.0</td>
-      <td>1.2</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>5.7</td>
-      <td>4.4</td>
-      <td>1.5</td>
-      <td>0.4</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>5.4</td>
-      <td>3.9</td>
-      <td>1.3</td>
-      <td>0.4</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>5.1</td>
-      <td>3.5</td>
-      <td>1.4</td>
-      <td>0.3</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>5.7</td>
-      <td>3.8</td>
-      <td>1.7</td>
-      <td>0.3</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>5.1</td>
-      <td>3.8</td>
-      <td>1.5</td>
-      <td>0.3</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>5.4</td>
-      <td>3.4</td>
-      <td>1.7</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>5.1</td>
-      <td>3.7</td>
-      <td>1.5</td>
-      <td>0.4</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>4.6</td>
-      <td>3.6</td>
       <td>1.0</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>5.1</td>
-      <td>3.3</td>
-      <td>1.7</td>
-      <td>0.5</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>4.8</td>
-      <td>3.4</td>
-      <td>1.9</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>5.0</td>
-      <td>3.0</td>
-      <td>1.6</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>5.0</td>
-      <td>3.4</td>
-      <td>1.6</td>
-      <td>0.4</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>5.2</td>
-      <td>3.5</td>
-      <td>1.5</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>5.2</td>
-      <td>3.4</td>
-      <td>1.4</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>4.7</td>
-      <td>3.2</td>
-      <td>1.6</td>
-      <td>0.2</td>
-      <td>Iris-setosa</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>120</th>
-      <td>6.9</td>
-      <td>3.2</td>
-      <td>5.7</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>121</th>
-      <td>5.6</td>
-      <td>2.8</td>
-      <td>4.9</td>
-      <td>2.0</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>122</th>
-      <td>7.7</td>
-      <td>2.8</td>
-      <td>6.7</td>
-      <td>2.0</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td>6.3</td>
-      <td>2.7</td>
-      <td>4.9</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td>6.7</td>
-      <td>3.3</td>
-      <td>5.7</td>
-      <td>2.1</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>125</th>
-      <td>7.2</td>
-      <td>3.2</td>
-      <td>6.0</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>126</th>
-      <td>6.2</td>
-      <td>2.8</td>
-      <td>4.8</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>6.1</td>
-      <td>3.0</td>
-      <td>4.9</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>6.4</td>
-      <td>2.8</td>
-      <td>5.6</td>
-      <td>2.1</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>129</th>
-      <td>7.2</td>
-      <td>3.0</td>
-      <td>5.8</td>
-      <td>1.6</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>130</th>
-      <td>7.4</td>
-      <td>2.8</td>
-      <td>6.1</td>
-      <td>1.9</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>131</th>
-      <td>7.9</td>
-      <td>3.8</td>
-      <td>6.4</td>
-      <td>2.0</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>132</th>
-      <td>6.4</td>
-      <td>2.8</td>
-      <td>5.6</td>
-      <td>2.2</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>133</th>
-      <td>6.3</td>
-      <td>2.8</td>
-      <td>5.1</td>
-      <td>1.5</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>134</th>
-      <td>6.1</td>
-      <td>2.6</td>
-      <td>5.6</td>
-      <td>1.4</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>135</th>
-      <td>7.7</td>
-      <td>3.0</td>
-      <td>6.1</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>136</th>
-      <td>6.3</td>
-      <td>3.4</td>
-      <td>5.6</td>
-      <td>2.4</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>137</th>
-      <td>6.4</td>
-      <td>3.1</td>
-      <td>5.5</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>138</th>
-      <td>6.0</td>
-      <td>3.0</td>
-      <td>4.8</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>139</th>
-      <td>6.9</td>
-      <td>3.1</td>
-      <td>5.4</td>
-      <td>2.1</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>140</th>
-      <td>6.7</td>
-      <td>3.1</td>
-      <td>5.6</td>
-      <td>2.4</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>141</th>
-      <td>6.9</td>
-      <td>3.1</td>
-      <td>5.1</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>142</th>
-      <td>5.8</td>
-      <td>2.7</td>
-      <td>5.1</td>
-      <td>1.9</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>143</th>
-      <td>6.8</td>
-      <td>3.2</td>
-      <td>5.9</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>144</th>
-      <td>6.7</td>
-      <td>3.3</td>
-      <td>5.7</td>
-      <td>2.5</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td>6.7</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td>6.3</td>
-      <td>2.5</td>
-      <td>5.0</td>
-      <td>1.9</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td>6.5</td>
-      <td>3.0</td>
-      <td>5.2</td>
-      <td>2.0</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td>6.2</td>
-      <td>3.4</td>
-      <td>5.4</td>
-      <td>2.3</td>
-      <td>Iris-virginica</td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td>5.9</td>
-      <td>3.0</td>
-      <td>5.1</td>
-      <td>1.8</td>
-      <td>Iris-virginica</td>
+      <td>1.0</td>
+      <td>2</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
+      <td>entire_home</td>
+      <td>3</td>
+      <td>21.15327</td>
+      <td>-86.85548</td>
+      <td>21</td>
+      <td>https://www.airbnb.com/rooms/18543147</td>
+      <td>18543147</td>
+      <td>15.789474</td>
     </tr>
   </tbody>
 </table>
-<p>150 rows × 5 columns</p>
 </div>
 </div>
 
