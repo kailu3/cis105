@@ -90,14 +90,18 @@ We typically use Boolean values to make comparisons between two objects. While t
 
 
 
-### Example
+### A Quick Case Study
 
 
 
 **Scenario:** Let's say you are looking for an Airbnb home to stay in for an upcoming trip. Now, you can't just pick any Airbnb listing as you would most likely need to filter the possibilities down to the listings that most satisfy your personal requirements. Now, suppose you had a dataset containing all of the listings in the location you are looking at. However, there are some contraints that you need to consider:
-- You need to look for listings <100 usd to be able to reimburse your trip
+- You need to look for listings less than 100 usd to be able to reimburse your trip
 - Since you are travelling with a classmate, you would prefer two beds in your Airbnb home
 - You want a listing that you can book instantly since your flight leaves tomorrow
+
+
+
+> `.head()` shows the first few rows of a dataset. You can also specify how many rows you want to return! On the other hand, `.tail()` returns the last few rows of a dataset
 
 
 
@@ -108,7 +112,7 @@ import pandas as pd
 
 # Importing Data
 url = "https://raw.githubusercontent.com/kailu3/think-data/master/content/data/airbnb.csv"
-dataset = pandas.read_csv(url)
+dataset = pd.read_csv(url)
 dataset.head(5)
 
 ```
@@ -142,109 +146,55 @@ dataset.head(5)
       <th>bedrooms</th>
       <th>num_beds</th>
       <th>can_instant_book</th>
-      <th>is_fully_refundable</th>
-      <th>is_superhost</th>
-      <th>is_new_listing</th>
-      <th>room_type_category</th>
-      <th>person_capacity</th>
-      <th>lat</th>
-      <th>lng</th>
       <th>price</th>
-      <th>url</th>
-      <th>listing_key</th>
-      <th>price_in_usd</th>
+      <th>listing_id</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>1.0</td>
-      <td>1.0</td>
+      <td>1</td>
       <td>1</td>
       <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.13566</td>
-      <td>-86.76741</td>
       <td>22</td>
-      <td>https://www.airbnb.com/rooms/20776319</td>
       <td>20776319</td>
-      <td>16.541353</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1.0</td>
-      <td>1.0</td>
+      <td>1</td>
       <td>1</td>
       <td>False</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.14571</td>
-      <td>-86.84190</td>
       <td>28</td>
-      <td>https://www.airbnb.com/rooms/16492050</td>
       <td>16492050</td>
-      <td>21.052632</td>
     </tr>
     <tr>
       <th>2</th>
       <td>1.5</td>
-      <td>1.0</td>
+      <td>1</td>
       <td>1</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>private_room</td>
-      <td>2</td>
-      <td>21.13119</td>
-      <td>-86.76394</td>
       <td>30</td>
-      <td>https://www.airbnb.com/rooms/14266451</td>
       <td>14266451</td>
-      <td>22.556391</td>
     </tr>
     <tr>
       <th>3</th>
       <td>1.0</td>
-      <td>2.0</td>
+      <td>2</td>
       <td>2</td>
       <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>entire_home</td>
-      <td>5</td>
-      <td>21.15737</td>
-      <td>-86.83975</td>
       <td>24</td>
-      <td>https://www.airbnb.com/rooms/17625889</td>
       <td>17625889</td>
-      <td>18.045113</td>
     </tr>
     <tr>
       <th>4</th>
       <td>1.0</td>
-      <td>1.0</td>
+      <td>1</td>
       <td>2</td>
       <td>True</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>entire_home</td>
-      <td>3</td>
-      <td>21.15327</td>
-      <td>-86.85548</td>
       <td>21</td>
-      <td>https://www.airbnb.com/rooms/18543147</td>
       <td>18543147</td>
-      <td>15.789474</td>
     </tr>
   </tbody>
 </table>
@@ -255,4 +205,96 @@ dataset.head(5)
 </div>
 </div>
 </div>
+
+
+
+>To satisfy these contraints, we will need to use `boolean indexing` which makes uses of `Comparisons` and `Booleans`!
+
+
+
+This is the syntax to get listings less than 100 usd from the `dataset`. You'll learn the syntax later in class but pay attention to `dataset['price'] < 100`. The whole expression means that I only want rows where the `price` column is `<` 100.
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+dataset.loc[dataset['price'] < 100]
+
+```
+</div>
+
+</div>
+
+
+
+To get listings that have two beds, the process is similar. Here pay attention to `dataset['num_beds']`. The whole expression means that I only want rows where the number of beds is at least 2.
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+dataset.loc[dataset['num_beds'] >= 2]
+
+```
+</div>
+
+</div>
+
+
+
+Finally, we want to be able to instantly book the listing which refers to the `can_instant_book` column. The datatype of this column is Boolean so we keep rows where the value is `True`. This again is similar:
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+dataset.loc[dataset['can_instant_book'] == True]
+
+```
+</div>
+
+</div>
+
+
+
+#### Combining the 3 statements
+
+Now let's combine the 3 statements and select all the listings where all three conditions satisfy:
+
+
+
+<div markdown="1" class="cell code_cell">
+<div class="input_area" markdown="1">
+```python
+(
+    dataset
+    .loc[dataset['price'] < 100]
+    .loc[dataset['num_beds'] >= 2]
+    .loc[dataset['can_instant_book'] == True]
+    .shape
+)
+
+```
+</div>
+
+<div class="output_wrapper" markdown="1">
+<div class="output_subarea" markdown="1">
+
+
+{:.output_data_text}
+```
+(1363, 6)
+```
+
+
+</div>
+</div>
+</div>
+
+
+
+> `.shape` returns the dimensions of the dataframe after we applied the 3 filters on it. It looks like there are 1363 listings that satisfy all three constraints. I guess we can filter down even more to get the perfect listing! :)
 
