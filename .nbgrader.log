@@ -1,0 +1,258 @@
+[LabApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[LabApp | INFO] Loading the validate_assignment nbgrader serverextension
+[LabApp | WARNING] JupyterLab server extension not enabled, manually loading...
+[LabApp | INFO] JupyterLab extension loaded from /Users/kailu/.pyenv/versions/3.6.5/lib/python3.6/site-packages/jupyterlab
+[LabApp | INFO] JupyterLab application directory is /Users/kailu/.pyenv/versions/3.6.5/share/jupyter/lab
+[LabApp | INFO] Serving notebooks from local directory: /Users/kailu/Desktop/Projects/think-data
+[LabApp | INFO] The Jupyter Notebook is running at:
+[LabApp | INFO] http://localhost:8889/?token=ca8ddc38a7fe673e8cbc11d1e7bbe65e0527c6aeb6072b4c
+[LabApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[LabApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/kailu/Library/Jupyter/runtime/nbserver-34554-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=ca8ddc38a7fe673e8cbc11d1e7bbe65e0527c6aeb6072b4c
+[LabApp | WARNING] 404 GET /github?1576703408934 (::1) 89.87ms referer=http://localhost:8889/lab
+[LabApp | WARNING] The extension "jupyterlab-chart-editor" is outdated.
+    
+[LabApp | WARNING] The extension "@deathbeds/jupyterlab-font-dejavu-sans-mono" is outdated.
+    
+[LabApp | WARNING] The extension "@deathbeds/jupyterlab-fonts" is outdated.
+    
+[LabApp | WARNING] The extension "@deathbeds/jupyterlab-font-anonymous-pro" is outdated.
+    
+[LabApp | WARNING] The extension "@deathbeds/jupyterlab-font-fira-code" is outdated.
+    
+[LabApp | INFO] Build is up to date
+[LabApp | WARNING] 404 GET /api/contents/Projects?1576703411698 (::1): No such file or directory: Projects
+[LabApp | WARNING] No such file or directory: Projects
+[LabApp | WARNING] 404 GET /api/contents/Projects?1576703411698 (::1) 3.04ms referer=http://localhost:8889/lab
+[LabApp | WARNING] 404 GET /api/contents/chrpinto_sbori_Project%20Continued.ipynb?content=0&1576703411699 (::1): No such file or directory: chrpinto_sbori_Project Continued.ipynb
+[LabApp | WARNING] No such file or directory: chrpinto_sbori_Project Continued.ipynb
+[LabApp | WARNING] 404 GET /api/contents/chrpinto_sbori_Project%20Continued.ipynb?content=0&1576703411699 (::1) 3.40ms referer=http://localhost:8889/lab
+[LabApp | INFO] Kernel started: 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | WARNING] Notebook content/3-numpy/sandbox.ipynb is not trusted
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Kernel started: 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | WARNING] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 2.13ms referer=http://localhost:8889/lab
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Starting buffering for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 72396132-e6be-410b-87a2-2c8bafd417dd
+[LabApp | INFO] Restoring connection for 72396132-e6be-410b-87a2-2c8bafd417dd:fc3c6f0f-86d2-440d-8190-f2dbb4d88a0b
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 5867ca8f-8916-4844-8c61-59af96261881
+[LabApp | INFO] Restoring connection for 5867ca8f-8916-4844-8c61-59af96261881:8594a4c9-8bda-4102-8d6a-c48de44b8609
+[LabApp | INFO] Saving file at /_config.yml
+[LabApp | INFO] Saving file at /_config.yml

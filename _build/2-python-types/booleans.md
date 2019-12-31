@@ -212,7 +212,7 @@ dataset.head(5)
 
 
 
-This is the syntax to get listings less than 100 usd from the `dataset`. You'll learn the syntax later in class but pay attention to `dataset['price'] < 100`. The whole expression means that I only want rows where the `price` column is `<` 100.
+This is the syntax to get listings less than 100 usd from the `dataset`. You'll learn the syntax later in class but pay attention to `dataset['price'] < 100`. The whole expression means that I only want rows where the `price` column is less than 100.
 
 
 
@@ -260,7 +260,7 @@ dataset.loc[dataset['can_instant_book'] == True]
 
 
 
-#### Combining the 3 statements
+**Combining the 3 statements**
 
 Now let's combine the 3 statements and select all the listings where all three conditions satisfy:
 
